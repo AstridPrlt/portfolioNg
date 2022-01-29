@@ -1,7 +1,7 @@
 @import "./../../styles.scss";
 
-$circleRayon: clamp(120vh, 120vmax, 50vw);
-// $circleRayon: 120vmax;
+// $circleRayon: clamp(120vh, 120vmax, 50vw);
+$circleRayon: 110vh;
 
 #home {
   width: 100vw;
@@ -18,21 +18,21 @@ $circleRayon: clamp(120vh, 120vmax, 50vw);
   .circle {
     width: $circleRayon;
     height: $circleRayon;
-    border-radius: 50%;
+    border-radius: 0 50% 50% 0;
     background: $color-primary;
     position: absolute;
-    left: clamp(-25vw, -100%, -60vw);
+    left: -7vw;
     top: 50%;
     transform: translateY(-50%);
     box-shadow: inset 40px 0px 40px 50px rgb(0 0 0 / 38%);
     .text {
       height: fit-content;
-      width: 50%;
+      width: 65%;
       margin: auto;
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-20%, -50%);
+      left: 55%;
+      transform: translate(-50%, -50%);
       color: floralwhite;
       font-family: 'Poiret One', cursive;
       font-size: 35px;
@@ -42,7 +42,7 @@ $circleRayon: clamp(120vh, 120vmax, 50vw);
         overflow: hidden;
         span {
           display: inline-block;
-          transform: translateY(100%);
+          // transform: translateY(100%);
           transition: transform 1s;
         }
       }
