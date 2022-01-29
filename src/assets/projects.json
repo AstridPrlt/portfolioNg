@@ -1,0 +1,179 @@
+[
+  {
+    "name": "Space Tourism",
+    "date": "2021",
+    "url": "https://astridprlt.github.io/space-tourism/",
+    "github": "https://github.com/AstridPrlt/space-tourism",
+    "development": ["intégration", "front-end"],
+    "goal": "Intégrer la maquette d'un site",
+    "tools": {
+      "front": ["Angular", "SCSS"],
+      "back": [],
+      "other": ["Figma"]
+    },
+    "objectives": [],
+    "functionalities": {
+      "users": [],
+      "admin": []
+    },
+    "images": {
+      "main": "./img/space.jpg",
+      "desktop": "",
+      "tablet": "",
+      "mobile": ""
+    }
+  },
+
+  {
+    "name": "Room",
+    "date": "2021",
+    "url": "https://astridprlt.github.io/room-homepage/",
+    "github": "https://github.com/AstridPrlt/room-homepage",
+    "development": ["intégration", "front-end"],
+    "goal": "Intégrer la maquette d'un site",
+    "tools": {
+      "front": ["HTML / CSS", "Javascript"],
+      "back": [],
+      "other": []
+    },
+    "objectives": [],
+    "functionalities": {
+      "users": [],
+      "admin": []
+    },
+    "images": {
+      "main": "./img/room.jpg",
+      "desktop": "./img/mockups/roomLaptop.png",
+      "tablet": "./img/mockups/roomTablet.png",
+      "mobile": "./img/mockups/roomMobile.png"
+    }
+  },
+
+  {
+    "name": "Le Cowee",
+    "date": "2020",
+    "url": "https://lecowee.astrid-perillat.fr/",
+    "github": "",
+    "development": ["full-stack"],
+    "goal": "Créer le site d'un coworking coffee",
+    "tools": {
+      "front": ["Bootstrap", "VueJS"],
+      "back": ["Laravel", "MySQL"],
+      "other": ["API Stripe", "Login via Google et GitHub"]
+    },
+    "objectives": [],
+    "functionalities": {
+      "users": [
+        "l'inscription et la gestion du profil",
+        "La réservation d’événements gratuits et payants",
+        "l'accès à la communauté"
+      ],
+      "admin": [
+        "la gestion des évènements",
+        "la gestion de la liste des membres"
+      ]
+    },
+    "images": {
+      "main": "./img/cowee.jpg",
+      "desktop": "",
+      "tablet": "",
+      "mobile": ""
+    }
+  },
+
+  {
+    "name": "Le Blog",
+    "date": "2020",
+    "url": "https://blogalaska-p4.astrid-perillat.fr/home.html",
+    "github": "",
+    "development": ["full-stack"],
+    "goal": "Créer le blog d’un écrivain lui permettant de rédiger et publier son nouveau roman par épisode",
+    "tools": {
+      "front": ["Bootstrap"],
+      "back": ["PHP", "MySQL"],
+      "other": ["TinyMCE"]
+    },
+    "objectives": [],
+    "functionalities": {
+      "users": [
+        "accéder aux différents épisodes",
+        "écrire des commentaires",
+        "signaler les commentaires inappropriés"
+      ],
+      "admin": [
+        "créer, modifier et supprimer les épisodes",
+        "modérer les commentaires"
+      ]
+    },
+    "images": {
+      "main": "./img/blog.jpg",
+      "desktop": "./img/mockups/blogLaptop.png",
+      "tablet": "./img/mockups/blogTablet.png",
+      "mobile": "./img/mockups/blogMobile.png"
+    }
+  },
+
+
+  {
+    "name": "Ride'up",
+    "date": "2020",
+    "url": "https://locvelo-p3.astrid-perillat.fr/",
+    "github": "",
+    "development": ["front-end"],
+    "goal": "Concevoir une carte intéractive de réservation de vélo",
+    "tools": {
+      "front": ["HTML / CSS", "Javascript"],
+      "back": [],
+      "other": ["API JCDecaux", "API Leaflet"]
+    },
+    "objectives":[
+      "créer un slider intéractif pour expliquer le fonctionnement du site",
+      "permettre la réservation d'un vélo, bloquée pendant 20min",
+      "fournir la localisation et l'état des stations en temps réèl",
+      "afficher l'état de la réservation"
+    ],
+    "functionalities": {
+      "users": [],
+      "admin": []
+    },
+    "images": {
+      "main": "./img/rideup.jpg",
+      "desktop": "",
+      "tablet": "",
+      "mobile": ""
+    }
+  },
+
+  {
+    "name": "Ireki",
+    "date": "2020",
+    "url": "https://ireki.astrid-perillat.fr/",
+    "github": "",
+    "development": ["front-end"],
+    "goal": "Créer le site d'un office du tourisme en personnalisant un thème WordPress avec des animations CSS",
+    "tools": {
+      "front": ["Wordpress", "animations CSS"],
+      "back": [],
+      "other": ["Thème enfant Wordpress"]
+    },
+    "objectives": [
+      "créer le design et assurer la cohérence graphique du site",
+      "respecter la structure demandée : une page d'accueil, des actualités, une page d'informations, des activités à réserver et une page de contact",
+      "ajouter des animations CSS pour certains éléments",
+      "optimiser le site pour le référencement naturel et suivre les bonnes pratiques d'accessibilité"
+    ],
+    "functionalities": {
+      "users": [
+        "réserver une activité",
+        "contacter les administrateurs du site"
+      ],
+      "admin": []
+    },
+    "images": {
+      "main": "./img/main.jpg",
+      "desktop": "",
+      "tablet": "",
+      "mobile": ""
+    }
+  }
+]
