@@ -1,1 +1,8 @@
-<p>projects works!</p>
+
+<div id="listOfProjects">
+  <div class="projectCard" *ngFor="let project of list">
+    <img [src]="project.images.main" alt="">
+    <h3>{{project.name}}</h3>
+    <a [routerLink]="['/portfolio', project.path]">Lien</a>
+  </div>
+</div>

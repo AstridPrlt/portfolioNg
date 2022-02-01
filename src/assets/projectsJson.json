@@ -1,6 +1,7 @@
 [
   {
     "name": "Space Tourism",
+    "path": "space-tourism",
     "date": "2021",
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
@@ -17,7 +18,7 @@
       "admin": []
     },
     "images": {
-      "main": "./img/space.jpg",
+      "main": "./assets/img/space.jpg",
       "desktop": "",
       "tablet": "",
       "mobile": ""
@@ -26,6 +27,7 @@
 
   {
     "name": "Room",
+    "path": "room",
     "date": "2021",
     "url": "https://astridprlt.github.io/room-homepage/",
     "github": "https://github.com/AstridPrlt/room-homepage",
@@ -42,15 +44,16 @@
       "admin": []
     },
     "images": {
-      "main": "./img/room.jpg",
-      "desktop": "./img/mockups/roomLaptop.png",
-      "tablet": "./img/mockups/roomTablet.png",
-      "mobile": "./img/mockups/roomMobile.png"
+      "main": "./assets/img/room.jpg",
+      "desktop": "./assets/img/mockups/roomLaptop.png",
+      "tablet": "./assets/img/mockups/roomTablet.png",
+      "mobile": "./assets/img/mockups/roomMobile.png"
     }
   },
 
   {
     "name": "Le Cowee",
+    "path": "le-cowee",
     "date": "2020",
     "url": "https://lecowee.astrid-perillat.fr/",
     "github": "",
@@ -74,7 +77,7 @@
       ]
     },
     "images": {
-      "main": "./img/cowee.jpg",
+      "main": "./assets/img/cowee.jpg",
       "desktop": "",
       "tablet": "",
       "mobile": ""
@@ -83,6 +86,7 @@
 
   {
     "name": "Le Blog",
+    "path": "le-blog",
     "date": "2020",
     "url": "https://blogalaska-p4.astrid-perillat.fr/home.html",
     "github": "",
@@ -106,16 +110,17 @@
       ]
     },
     "images": {
-      "main": "./img/blog.jpg",
-      "desktop": "./img/mockups/blogLaptop.png",
-      "tablet": "./img/mockups/blogTablet.png",
-      "mobile": "./img/mockups/blogMobile.png"
+      "main": "./assets/img/blog.jpg",
+      "desktop": "./assets/img/mockups/blogLaptop.png",
+      "tablet": "./assets/img/mockups/blogTablet.png",
+      "mobile": "./assets/img/mockups/blogMobile.png"
     }
   },
 
 
   {
     "name": "Ride'up",
+    "path": "ride-up",
     "date": "2020",
     "url": "https://locvelo-p3.astrid-perillat.fr/",
     "github": "",
@@ -137,7 +142,7 @@
       "admin": []
     },
     "images": {
-      "main": "./img/rideup.jpg",
+      "main": "./assets/img/rideup.jpg",
       "desktop": "",
       "tablet": "",
       "mobile": ""
@@ -146,6 +151,7 @@
 
   {
     "name": "Ireki",
+    "path": "ireki",
     "date": "2020",
     "url": "https://ireki.astrid-perillat.fr/",
     "github": "",
@@ -170,7 +176,7 @@
       "admin": []
     },
     "images": {
-      "main": "./img/main.jpg",
+      "main": "./assets/img/ireki.jpg",
       "desktop": "",
       "tablet": "",
       "mobile": ""

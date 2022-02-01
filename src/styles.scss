@@ -5,4 +5,12 @@
 }
 
 $color-primary: #0B3948;
-$color-secondary: #E07A5F;
+// $color-secondary: #E07A5F;
+$color-secondary: #e6937d;
+
+$font-text: 'Mulish', sans-serif;
+$font-titles: 'Oswald', sans-serif;
+
+body {
+  font-family: $font-text;
+}

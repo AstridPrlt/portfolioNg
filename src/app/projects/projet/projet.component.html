@@ -1,1 +1,40 @@
-<p>projet works!</p>
+<div id="projectPage">
+
+  <section id="hero">
+    <h2>{{projectDetails.name}}</h2>
+    <div id="imgHero">
+      <img [src]="projectDetails.images.main" alt="image du site {{projectDetails.name}}">
+    </div>
+  </section>
+
+  <section id="responsive">
+    <div class="text">
+      <p>un site responsive</p>
+    </div>
+    <div class="slider-dots">
+      <button class="dot active"><span class="material-icons">computer</span></button>
+      <button class="dot"><span class="material-icons">tablet_mac</span></button>
+      <button class="dot"><span class="material-icons">phone_iphone</span></button>
+    </div>
+    <div class="slider">
+      <div id="wrapper" #wrapper>
+        <div class="imgResponsive">
+          <img [src]="projectDetails.images.desktop" alt="">
+        </div>
+        <div class="imgResponsive">
+          <img [src]="projectDetails.images.tablet" alt="">
+        </div>
+        <div class="imgResponsive">
+          <img [src]="projectDetails.images.mobile" alt="">
+        </div>
+        <!-- <div class="imgResponsive">
+          <img [src]="projectDetails.images.tablet" alt="">
+        </div>
+        <div class="imgResponsive">
+          <img [src]="projectDetails.images.desktop" alt="">
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+</div>

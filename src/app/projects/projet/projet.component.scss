@@ -1,0 +1,117 @@
+@import "./../../../styles.scss";
+
+:host {
+  display: block;
+  // background: $color-primary;
+  background: #062029;
+}
+
+section#hero {
+  position: relative;
+  h2 {
+    position: absolute;
+    right: 14%;
+    top: -3%;
+    z-index: 10;
+    font-family: $font-titles;
+    font-size: 128px;
+    // color: #f59a82;
+    color: antiquewhite;
+    text-shadow: 2px 4px 8px rgb(0 0 0 / 50%);
+  }
+  #imgHero {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 70px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: transform 1s;
+      transition-timing-function: cubic-bezier(0.25,0.74,0.22,0.99);
+    }
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+section#responsive {
+  margin: 50px auto;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  position: relative;
+  .text {
+    width: 50%;
+    background: $color-secondary;
+    p {
+      width: 15%;
+      margin: 10%;
+      font-size: 3rem;
+      line-height: 2.5;
+      color: $color-primary;
+    }
+  }
+  .slider-dots {
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .dot {
+      width: 4rem;
+      height: 4rem;
+      background: white;
+      color: #0B3948;
+      border: 5px solid $color-primary;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+        background-color: $color-primary;
+        color: white;
+      }
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+  .slider {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    #wrapper {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      background: white;
+      animation: responsiveSliderAnim 6s ease-in-out infinite alternate;
+      // transition: transform 2s;
+      transform: translateX(-66.66%);
+      .imgResponsive {
+        // position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: white;
+        img {
+          max-width: 75%;
+          max-height: 75%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes responsiveSliderAnim {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(-33%);}
+  100% {transform: translateX(-66%);}
+}
