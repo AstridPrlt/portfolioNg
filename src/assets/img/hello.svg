@@ -1,0 +1,105 @@
+<svg width="201.601" height="178.502" viewBox="0 0 201.601 78.502" xmlns="http://www.w3.org/2000/svg">
+<g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="black" style="stroke:#000;stroke-width:0.25mm;fill:white">
+
+<path style="transform-origin: bottom center; -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; animation: textAnim 1.2s linear forwards;" d="M 38.8 10.4 L 53 7.9 L 51.6 51.4 L 52.8 77.4 L 38.8 77.4 L 40 53.1 L 39.8 47.8 L 12.9 47.8 L 12.8 51.4 L 14 77.4 L 0 77.4 L 1.2 53.1 L 0 10.4 L 14.2 7.9 L 13.2 37.2 L 39.5 37.2 L 38.8 10.4 Z" id="0" vector-effect="non-scaling-stroke"/>
+
+<path style="transform-origin: bottom center; -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; animation: textAnim 1.1s linear 0.1s forwards;"  d="M 95.9 62.7 L 97.7 61.2 L 102.3 66.8 A 14.565 14.565 0 0 1 101.439 68.086 Q 100.992 68.689 100.432 69.342 A 34.222 34.222 0 0 1 99.2 70.7 A 33.614 33.614 0 0 1 96.689 73.083 A 27.347 27.347 0 0 1 94.95 74.45 A 16.491 16.491 0 0 1 92.983 75.654 Q 91.971 76.186 90.766 76.677 A 33.927 33.927 0 0 1 89.25 77.25 Q 85.7 78.5 81.9 78.5 Q 73.8 78.5 68.7 72.35 A 21.628 21.628 0 0 1 64.203 62.749 A 30.843 30.843 0 0 1 63.6 56.5 Q 63.6 44.3 70.7 35.1 A 28.439 28.439 0 0 1 75.587 30.077 A 18.513 18.513 0 0 1 87.3 25.9 A 20.854 20.854 0 0 1 91.929 26.383 Q 95.133 27.112 97.466 28.943 A 12.587 12.587 0 0 1 98.65 30 A 13.429 13.429 0 0 1 102.057 36.127 Q 102.62 38.248 102.69 40.771 A 26.159 26.159 0 0 1 102.7 41.5 Q 102.7 45.9 101.2 51.5 L 99.2 53.6 L 74.2 55.9 Q 75.84 66.8 84.178 67.186 A 13.437 13.437 0 0 0 84.8 67.2 A 12.639 12.639 0 0 0 88.157 66.725 A 17.247 17.247 0 0 0 90.9 65.7 A 34.756 34.756 0 0 0 92.935 64.669 Q 93.91 64.13 94.706 63.592 A 14.991 14.991 0 0 0 95.9 62.7 Z M 73.9 48.8 L 90.9 46.7 A 45.792 45.792 0 0 0 91.071 45.213 Q 91.2 43.884 91.2 42.9 A 10.129 10.129 0 0 0 90.894 40.289 Q 89.999 36.944 86.491 36.335 A 9.901 9.901 0 0 0 84.8 36.2 A 9.192 9.192 0 0 0 77.926 39.166 A 12.243 12.243 0 0 0 77.4 39.75 A 14.508 14.508 0 0 0 74.508 45.363 A 19.755 19.755 0 0 0 73.9 48.8 Z" id="1" vector-effect="non-scaling-stroke"/>
+
+<path style="transform-origin: bottom center; -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; animation: textAnim 1s linear 0.2s forwards;"  d="M 111.4 2.5 L 125.1 0 L 123.8 51.4 L 124.9 74.9 L 111.4 77.4 L 112.6 53.1 L 111.4 2.5 Z" id="2" vector-effect="non-scaling-stroke"/>
+
+<path style="transform-origin: bottom center; -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; animation: textAnim 0.9s linear 0.3s forwards;"  d="M 136.7 2.5 L 150.4 0 L 149.1 51.4 L 150.2 74.9 L 136.7 77.4 L 137.9 53.1 L 136.7 2.5 Z" id="3" vector-effect="non-scaling-stroke"/>
+
+<path style="transform-origin: bottom center; -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; animation: textAnim 0.8s linear 0.4s forwards;" d="M 160.417 45.701 A 39.47 39.47 0 0 0 159 56.5 A 29.645 29.645 0 0 0 159.28 60.638 A 21.898 21.898 0 0 0 164.45 72.25 A 18.305 18.305 0 0 0 170.001 76.644 A 17.935 17.935 0 0 0 178.2 78.5 Q 188.3 78.5 194.95 69.75 A 31.531 31.531 0 0 0 200.502 57.791 A 43.234 43.234 0 0 0 201.6 47.8 Q 201.6 37.9 196.45 31.9 A 16.457 16.457 0 0 0 188.169 26.675 A 22.849 22.849 0 0 0 182.05 25.9 A 18.068 18.068 0 0 0 170.681 29.918 A 27.499 27.499 0 0 0 165.9 34.8 A 31.739 31.739 0 0 0 160.417 45.701 Z M 181.08 38.513 A 12.935 12.935 0 0 0 180.5 38.5 A 10.922 10.922 0 0 0 175.77 39.453 Q 170.2 42.099 170.2 52.1 A 28.041 28.041 0 0 0 170.512 56.426 Q 170.867 58.693 171.624 60.529 A 12.923 12.923 0 0 0 173.1 63.2 A 10.144 10.144 0 0 0 175.733 65.771 Q 177.911 67.2 180.75 67.2 A 9.785 9.785 0 0 0 183.867 66.729 A 7.817 7.817 0 0 0 187.95 63.55 A 12.455 12.455 0 0 0 189.487 60.212 Q 189.972 58.618 190.199 56.682 A 31.656 31.656 0 0 0 190.4 53 Q 190.4 38.931 181.08 38.513 Z" id="4" vector-effect="non-scaling-stroke"/>
+</g>
+
+<style id="textAnim" data-anikit="">
+@keyframes textAnim
+{
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.1361,0.2514,0.2175,0.8786);
+    transform: translate(0,0px) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.7674,0.1844,0.8382,0.7157);
+    transform: translate(0,-40px) scaleY(1.3);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.1118,0.2149,0.2172,0.941);
+    transform: translate(0,-40px) scaleY(1.3);
+  }
+  85% {
+    animation-timing-function: cubic-bezier(0.7494,0.2259,0.8209,0.6963);
+    transform: translate(0,0) scaleY(1);
+  }
+  90% {
+    animation-timing-function: cubic-bezier(0.7494,0.2259,0.8209,0.6963);
+    transform: translate(0,0) scaleY(0.8);
+  }
+  <!-- 90% {
+    animation-timing-function: cubic-bezier(0.7494,0.2259,0.8209,0.6963);
+    transform: translate(0,0) scaleY(1);
+  } -->
+  100% {
+    transform: translate(0,0px) scaleY(1);
+  }
+}</style>
+
+</svg>
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; background: transparent; display: block; shape-rendering: auto;" width="285" height="250" preserveAspectRatio="xMidYMid">
+<style type="text/css">
+  text {
+    text-anchor: middle; font-size: 101px; opacity: 0;
+  }
+</style>
+<g style="transform-origin: 142.5px 125px; transform: scale(1.2625);">
+<g transform="translate(142.5,25)">
+  <g transform="translate(0,40)">
+  <g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -53.04px -4.13663px; animation: 1s linear -0.528s 1 normal forwards running bounce-fd920b75-1c3d-4a56-864e-13511edafdc5;">
+
+  <path d="M37.44-53.60L48.80-55.60L47.68-20.80L48.64 0L37.44 0L38.40-19.44L38.24-23.68L16.72-23.68L16.64-20.80L17.60 0L6.40 0L7.36-19.44L6.40-53.60L17.76-55.60L16.96-32.16L38-32.16L37.44-53.60" fill="#ffffff" stroke="none" stroke-width="none" transform="translate(-80.64003562927246,23.66336352539063)" style="fill: rgb(255, 255, 255);"></path>
+  </g>
+
+  <g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -7.72004px 3.50337px; animation: 1s linear -0.396s normal forwards running bounce-fd920b75-1c3d-4a56-864e-13511edafdc5;">
+  <path d="M74.24-8.16L74.24-8.16L74.24-8.16Q76.56-8.16 79.12-9.36L79.12-9.36L79.12-9.36Q81.68-10.56 83.12-11.76L83.12-11.76L84.56-12.96L88.24-8.48L88.24-8.48Q87.44-7.12 85.76-5.36L85.76-5.36L85.76-5.36Q84.08-3.60 82.36-2.36L82.36-2.36L82.36-2.36Q80.64-1.12 77.80-0.12L77.80-0.12L77.80-0.12Q74.96 0.88 71.92 0.88L71.92 0.88L71.92 0.88Q65.44 0.88 61.36-4.04L61.36-4.04L61.36-4.04Q57.28-8.96 57.28-16.72L57.28-16.72L57.28-16.72Q57.28-26.48 62.96-33.84L62.96-33.84L62.96-33.84Q68.64-41.20 76.24-41.20L76.24-41.20L76.24-41.20Q82.08-41.20 85.32-37.92L85.32-37.92L85.32-37.92Q88.56-34.64 88.56-28.72L88.56-28.72L88.56-28.72Q88.56-25.20 87.36-20.72L87.36-20.72L85.76-19.04L65.76-17.20L65.76-17.20Q67.12-8.16 74.24-8.16zM74.24-32.96L74.24-32.96L74.24-32.96Q70.72-32.96 68.32-30.12L68.32-30.12L68.32-30.12Q65.92-27.28 65.52-22.88L65.52-22.88L79.12-24.56L79.12-24.56Q79.36-26.40 79.36-27.60L79.36-27.60L79.36-27.60Q79.36-32.96 74.24-32.96" fill="#ffffff" stroke="none" stroke-width="none" transform="translate(-80.64003562927246,23.66336352539063)" style="fill: rgb(255, 255, 255);"></path>
+  </g>
+
+  <g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 20.36px -7.29663px; animation: 1s linear -0.264s normal forwards running bounce-fd920b75-1c3d-4a56-864e-13511edafdc5;">
+  <path d="M95.52-59.92L106.48-61.92L105.44-20.80L106.32-2L95.52 0L96.48-19.44L95.52-59.92" fill="#ffffff" stroke="none" stroke-width="none" transform="translate(-80.64003562927246,23.66336352539063)" style="fill: rgb(255, 255, 255);"></path></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 40.6px -7.29663px; animation: 1s linear -0.132s normal forwards running bounce-fd920b75-1c3d-4a56-864e-13511edafdc5;"><path d="M115.76-59.92L126.72-61.92L125.68-20.80L126.56-2L115.76 0L116.72-19.44L115.76-59.92" fill="#ffffff" stroke="none" stroke-width="none" transform="translate(-80.64003562927246,23.66336352539063)" style="fill: rgb(255, 255, 255);"></path>
+  </g>
+
+  <g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 70px 3.50337px; animation: 1s linear 0s normal forwards running bounce-fd920b75-1c3d-4a56-864e-13511edafdc5;">
+  <path d="M133.60-16.72L133.60-16.72Q133.60-26.96 139.12-34.08L139.12-34.08L139.12-34.08Q144.64-41.20 152.04-41.20L152.04-41.20L152.04-41.20Q159.44-41.20 163.56-36.40L163.56-36.40L163.56-36.40Q167.68-31.60 167.68-23.68L167.68-23.68L167.68-23.68Q167.68-13.12 162.36-6.12L162.36-6.12L162.36-6.12Q157.04 0.88 148.96 0.88L148.96 0.88L148.96 0.88Q142.32 0.88 137.96-4.12L137.96-4.12L137.96-4.12Q133.60-9.12 133.60-16.72L133.60-16.72zM158.72-19.52L158.72-19.52L158.72-19.52Q158.72-31.12 150.80-31.12L150.80-31.12L150.80-31.12Q142.56-31.12 142.56-20.24L142.56-20.24L142.56-20.24Q142.56-14.56 144.88-11.36L144.88-11.36L144.88-11.36Q147.20-8.16 151-8.16L151-8.16L151-8.16Q154.80-8.16 156.76-11.08L156.76-11.08L156.76-11.08Q158.72-14 158.72-19.52" fill="#ffffff" stroke="none" stroke-width="none" transform="translate(-80.64003562927246,23.66336352539063)" style="fill: rgb(255, 255, 255);"></path></g></g>
+</g>
+</g>
+<style id="bounce-fd920b75-1c3d-4a56-864e-13511edafdc5" data-anikit="">
+@keyframes bounce-fd920b75-1c3d-4a56-864e-13511edafdc5
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1361,0.2514,0.2175,0.8786);
+    transform: translate(0,0px) scaleY(1);
+  }
+  37% {
+    animation-timing-function: cubic-bezier(0.7674,0.1844,0.8382,0.7157);
+    transform: translate(0,-39.96px) scaleY(1);
+  }
+  72% {
+    animation-timing-function: cubic-bezier(0.1118,0.2149,0.2172,0.941);
+    transform: translate(0,0px) scaleY(1);
+  }
+  87% {
+    animation-timing-function: cubic-bezier(0.7494,0.2259,0.8209,0.6963);
+    transform: translate(0,19.900000000000002px) scaleY(0.602);
+  }
+  100% {
+    transform: translate(0,0px) scaleY(1);
+  }
+}</style></svg> -->

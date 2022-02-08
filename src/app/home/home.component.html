@@ -1,20 +1,23 @@
 <div id="home">
 
-  <section class="homeText">
-    <div class="circle">
-      <div class="text">
-        <p><span>hello World !</span></p>
-        <p><span>bienvenue sur mon portfolio.</span></p>
-        <p><span>installez-vous confortablement,</span></p>
-        <p><span>et laissez-moi vous présenter</span></p>
-        <button type="button" routerLink="/portfolio"><span>mes sites web</span></button>
-      </div>
+  <div id="avatar" #avatar @animationAvatar *ngIf="!isMenuShowed" >
+    <p class="textHello" #textHello>Hello</p>
+    <img class="avatarImg" src="./../../assets/img/Avatar.svg" alt="">
+    <p class="textWorld" #textWorld>World !</p>
+  </div>
+
+  <div id="homePage" *ngIf="isMenuShowed" #homePage @animationHomePage>
+    <div id="welcomeText">
+      <h2><span>Bienvenue</span><br>sur mon portfolio</h2>
+      <p>installez-vous confortablement, et laissez-moi vous présenter mes projets web.<br>
+      de l'intégration de maquettes au développement full-stack, ils sont toujours responsives et accessibles</p>
+      <button type="button" class="btn-grad">Voir mes projets</button>
     </div>
-  </section>
-
-  <section class="homeImg">
-    <div class="img"></div>
-
-  </section>
+    <div class="img">
+      <img class="clip1" src="./../../assets/img/home.jpg" alt="">
+      <img class="clip2" src="./../../assets/img/home.jpg" alt="">
+      <img class="clip3" src="./../../assets/img/home.jpg" alt="">
+    </div>
+  </div>
 
 </div>
