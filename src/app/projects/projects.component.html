@@ -1,8 +1,26 @@
+<div id="projectsListPage">
 
-<div id="listOfProjects">
-  <div class="projectCard" *ngFor="let project of list">
-    <img [src]="project.images.main" alt="">
-    <h3>{{project.name}}</h3>
-    <a [routerLink]="['/portfolio', project.path]">Lien</a>
+  <!-- <div id="filterbanner">
+    <li class="filterWords">intégration</li>
+    <li class="filterWords">front-end</li>
+    <li class="filterWords">full-stack</li>
+    <li class="filterWords">angular</li>
+    <li class="filterWords">javascript</li>
+    <li class="filterWords">PHP</li>
+    <li class="filterWords">laravel</li>
+    <li class="filterWords">mySql</li>
+    <li class="filterWords">API</li>
+    <li class="filterWords">wordpress</li>
+    <li class="filterWords">bootstrap</li>
+    <li class="filterWords">vueJs</li>
+  </div> -->
+
+  <div id="listOfProjects">
+    <div class="projectCard" *ngFor="let project of list">
+      <img [src]="project.images.main" alt="">
+      <h3>{{project.name}}</h3>
+      <a [routerLink]="['/portfolio', project.path]">Lien</a>
+    </div>
   </div>
+
 </div>

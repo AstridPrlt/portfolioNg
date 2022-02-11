@@ -3,19 +3,48 @@
   overflow: hidden;
 }
 
-#listOfProjects {
-  overflow: hidden;
-  width: fit-content;
-  height: 100vh;
+#projectsListPage {
   display: flex;
-  align-items: center;
-  .projectCard {
-    width: 340px;
-    height: 400px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  height: 100vh;
+
+  #filterbanner {
+    width: 30%;
+    height: 100%;
+    background: black;
+    color: white;
+
+    li.filterWords {
+      list-style: none;
+      display: inline-block;
+      // background: black;
+      margin: 5px;
+      padding: 9px;
+      border-radius: 10px;
+      border-width: 2px;
+      border-style: solid;
+      border-image: linear-gradient(#e96443, #904e95) 1;
+      // background: linear-gradient(#e96443, #904e95) padding-box
+      // linear-gradient(to right, #e96443, #904e95) border-box;
+      // border: 4px solid transparent;
     }
   }
+
+  #listOfProjects {
+    background: #d9d9d9;
+    overflow: hidden;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .projectCard {
+      width: 340px;
+      height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
 }

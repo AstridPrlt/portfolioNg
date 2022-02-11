@@ -1,10 +1,37 @@
 <div id="projectPage">
 
+  <button routerLink="/portfolio" class="close">
+    <span class="material-icons">close</span>
+    <svg viewBox="0 0 100 100" width="110%" height="110%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="0%"   stop-color="#904e95" />
+          <stop offset="100%" stop-color="#e96443" />
+        </linearGradient>
+      </defs>
+      <circle cx="50%" cy="50%" r="45%" fill="none"
+              stroke="url(#myGradient)" />
+    </svg>
+  </button>
+
   <section id="hero">
     <h2>{{projectDetails.name}}</h2>
     <div id="imgHero">
       <img [src]="projectDetails.images.main" alt="image du site {{projectDetails.name}}">
     </div>
+  </section>
+
+  <section id="description">
+    <div id="descProject">
+      <h3>le projet</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus ad beatae quos sunt, in enim maxime provident facere fugiat ratione suscipit distinctio cumque nostrum sed cupiditate earum. Asperiores, officiis.</p>
+    </div>
+
+    <div id="descFunctionalities">
+      <h3>les fonctionnalités</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus ad beatae quos sunt, in enim maxime provident facere fugiat ratione suscipit distinctio cumque nostrum sed cupiditate earum. Asperiores, officiis.</p>
+    </div>
+
   </section>
 
   <section id="responsive">
@@ -27,13 +54,16 @@
         <div class="imgResponsive">
           <img [src]="projectDetails.images.mobile" alt="">
         </div>
-        <!-- <div class="imgResponsive">
-          <img [src]="projectDetails.images.tablet" alt="">
-        </div>
-        <div class="imgResponsive">
-          <img [src]="projectDetails.images.desktop" alt="">
-        </div> -->
       </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="previousProject">
+      <span>Projet précédent</span>
+    </div>
+    <div class="nextProject">
+      <span>Projet suivant</span>
     </div>
   </section>
 

@@ -3,15 +3,52 @@
 :host {
   display: block;
   // background: $color-primary;
-  background: #062029;
+  // background: #062029;
+  // background: black;
+  background: url("./../../../assets/img/PatternT.svg"), black;
+  background-attachment: fixed;
+  color: floralwhite;
+}
+
+button.close {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 50%;
+  color: floralwhite;
+  border: none;
+  background: #464646;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  span {
+    font-size: 35px;
+  }
+  svg {
+    position: absolute;
+    left: -5%;
+    top: -9%;
+    z-index: 1200;
+    width: 110%;
+    height: 110%;
+    circle {
+      stroke-width: 5px;
+    }
+  }
+  &:hover {
+    opacity: 1;
+  }
 }
 
 section#hero {
   position: relative;
   h2 {
     position: absolute;
-    right: 14%;
-    top: -3%;
+    right: 18%;
+    top: 6%;
     z-index: 10;
     font-family: $font-titles;
     font-size: 128px;
@@ -23,7 +60,7 @@ section#hero {
     display: block;
     width: 50%;
     margin: auto;
-    padding-top: 70px;
+    padding-top: 10%;
     overflow: hidden;
     img {
       width: 100%;
@@ -36,6 +73,25 @@ section#hero {
   }
 }
 
+section#description {
+  margin: 80px auto;
+  padding: 0 10%;
+  h3 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 2;
+  }
+  #descFunctionalities {
+    h3 {
+      text-align: right;
+    }
+  }
+}
+
 section#responsive {
   margin: 50px auto;
   width: 100%;
@@ -44,13 +100,14 @@ section#responsive {
   position: relative;
   .text {
     width: 50%;
-    background: $color-secondary;
+    // background: $color-secondary;
+    background: linear-gradient(to right, #904e95 51%, #e96443 100%);
     p {
       width: 15%;
       margin: 10%;
-      font-size: 3rem;
-      line-height: 2.5;
-      color: $color-primary;
+      font-family: 'Poiret One', sans-serif;
+      font-size: 4rem;
+      line-height: 1.5;
     }
   }
   .slider-dots {
@@ -114,4 +171,8 @@ section#responsive {
   0% {transform: translateX(0);}
   50% {transform: translateX(-33%);}
   100% {transform: translateX(-66%);}
+}
+
+section#footer {
+  display: flex;
 }
