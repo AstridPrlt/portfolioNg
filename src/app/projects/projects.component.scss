@@ -1,50 +1,130 @@
 
 :host {
   overflow: hidden;
+  // background: url("./../../assets/img/PatternT.svg"), black;
+  // background-attachment: fixed;
 }
 
 #projectsListPage {
-  display: flex;
+  background: url("./../../assets/img/PatternT.svg"), #232328;
+  background-attachment: fixed;
+  // display: flex;
+  width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 
-  #filterbanner {
-    width: 30%;
-    height: 100%;
-    background: black;
-    color: white;
+  // #filterbanner {
+  //   width: 30%;
+  //   height: 100%;
+  //   background: black;
+  //   color: white;
 
-    li.filterWords {
-      list-style: none;
-      display: inline-block;
-      // background: black;
-      margin: 5px;
-      padding: 9px;
-      border-radius: 10px;
-      border-width: 2px;
-      border-style: solid;
-      border-image: linear-gradient(#e96443, #904e95) 1;
-      // background: linear-gradient(#e96443, #904e95) padding-box
-      // linear-gradient(to right, #e96443, #904e95) border-box;
-      // border: 4px solid transparent;
+  //   li.filterWords {
+  //     list-style: none;
+  //     display: inline-block;
+  //     // background: black;
+  //     margin: 5px;
+  //     padding: 9px;
+  //     border-radius: 10px;
+  //     border-width: 2px;
+  //     border-style: solid;
+  //     border-image: linear-gradient(#e96443, #904e95) 1;
+  //     // background: linear-gradient(#e96443, #904e95) padding-box
+  //     // linear-gradient(to right, #e96443, #904e95) border-box;
+  //     // border: 4px solid transparent;
+  //   }
+  // }
+
+  #listOfProjects {
+    padding-top: 10%;
+    padding-left: 5%;
+    overflow-x: hidden;
+    width: fit-content;
+    height: fit-content;
+    // height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: transform 1s;
+    .projectCard {
+      width: 20vw;
+      height: 64vh;
+      overflow: hidden;
+      position: relative;
+      transition: all 1s;
+      img {
+        // width: 100%;
+        // height: 100%;
+        object-fit: cover;
+        transition: all 1s;
+        transform: translateX(-40%) scale(1.1);
+      }
+      a {
+        position: absolute;
+        bottom: -35px;
+        text-decoration: none;
+        color: floralwhite;
+        font-size: 2rem;
+        padding-left: 10px;
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        cursor: pointer;
+        img {
+          transform: translateX(-40%) scale(1);
+          filter: brightness(0.7);
+        }
+        a {
+          transform: translateY(-70px);
+        }
+      }
     }
   }
 
-  #listOfProjects {
-    background: #d9d9d9;
-    overflow: hidden;
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    .projectCard {
-      width: 340px;
-      height: 400px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  section#nav {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: 5%;
+    button {
+      position: relative;
+      // background: transparent;
+      padding: 10px;
+      border-radius: 50%;
+      background: #232328;
+      color: floralwhite;
+      border: none;
+      cursor: pointer;
+      span {
+        font-size: 1.5rem;
+      }
+      &::before {
+        content: "";
+        width: 110%;
+        height: 110%;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #e96443 0%, #904e95  51%, #e96443  100%);
+        position: absolute;
+        z-index: -1;
+        top: -5%;
+        left: -5%;
+        transition: transform 1s;
+      }
+      &:hover {
+        &::before {
+          transform: rotate(360deg);
+        }
+      }
+
+      &:first-of-type {
+        margin-right: 20px;
       }
     }
+    // &::before {
+    //   content: '';
+
+    // }
   }
 
 }

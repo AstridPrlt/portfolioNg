@@ -15,12 +15,26 @@
     <li class="filterWords">vueJs</li>
   </div> -->
 
-  <div id="listOfProjects">
+  <div id="listOfProjects" #listOfProjects>
     <div class="projectCard" *ngFor="let project of list">
       <img [src]="project.images.main" alt="">
-      <h3>{{project.name}}</h3>
-      <a [routerLink]="['/portfolio', project.path]">Lien</a>
+      <!-- <h3>{{project.name}}</h3> -->
+      <a [routerLink]="['/portfolio', project.path]">{{project.name}}</a>
     </div>
   </div>
+
+  <section id="nav">
+    <div id="progressionBar">
+
+    </div>
+    <div id="buttonsNav">
+      <button (click)="navBack()" type="button">
+        <span class="material-icons">arrow_back</span>
+      </button>
+      <button (click)="navNext()" type="button">
+        <span class="material-icons">arrow_forward</span>
+      </button>
+    </div>
+  </section>
 
 </div>

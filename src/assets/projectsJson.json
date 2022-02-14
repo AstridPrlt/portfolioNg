@@ -78,9 +78,9 @@
     },
     "images": {
       "main": "./assets/img/cowee.jpg",
-      "desktop": "",
-      "tablet": "",
-      "mobile": ""
+      "desktop": "./assets/img/mockups/coweeLaptop.png",
+      "tablet": "./assets/img/mockups/coweeTablet.png",
+      "mobile": "./assets/img/mockups/coweeMobile.png"
     }
   },
 
@@ -143,9 +143,9 @@
     },
     "images": {
       "main": "./assets/img/rideup.jpg",
-      "desktop": "",
-      "tablet": "",
-      "mobile": ""
+      "desktop": "./assets/img/mockups/rideLaptop.png",
+      "tablet": "./assets/img/mockups/rideTablet.png",
+      "mobile": "./assets/img/mockups/rideMobile.png"
     }
   },
 

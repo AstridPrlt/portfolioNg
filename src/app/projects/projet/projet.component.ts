@@ -11,6 +11,7 @@ import ProjectsJson from '../../../assets/projectsJson.json';
 export class ProjetComponent implements OnInit, AfterViewInit {
   projectToShow!: string;
   projectDetails!: ProjectItem;
+  indexOfActualProject!: number;
 
   @ViewChild("wrapper") wrapper!: ElementRef;
 
@@ -22,8 +23,8 @@ export class ProjetComponent implements OnInit, AfterViewInit {
       next: param => {
         console.log(param['name']);
         this.projectToShow = param['name'];
-        let index = ProjectsJson.findIndex(p => p.path == this.projectToShow);
-        this.projectDetails = ProjectsJson[index];
+        this.indexOfActualProject = ProjectsJson.findIndex(p => p.path == this.projectToShow);
+        this.projectDetails = ProjectsJson[this.indexOfActualProject];
         console.log(this.projectDetails);
       },
       error: err => console.log(err)
