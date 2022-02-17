@@ -6,13 +6,11 @@
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
     "development": ["intégration", "front-end"],
-    "goal": "Intégrer la maquette d'un site",
-    "tools": {
-      "front": ["Angular", "SCSS"],
-      "back": [],
-      "other": ["Figma"]
-    },
-    "objectives": [],
+    "goal": "Challenge du site FrontendMentor : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
+    "tools": ["Angular", "SCSS", "Figma"],
+    "objectives": [
+      "créer l'interface sous forme de Single Page Application"
+    ],
     "functionalities": {
       "users": [],
       "admin": []
@@ -32,7 +30,7 @@
     "url": "https://astridprlt.github.io/room-homepage/",
     "github": "https://github.com/AstridPrlt/room-homepage",
     "development": ["intégration", "front-end"],
-    "goal": "Intégrer la maquette d'un site",
+    "goal": "Challenge du site FrontendMentor : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
     "tools": {
       "front": ["HTML / CSS", "Javascript"],
       "back": [],
@@ -58,12 +56,8 @@
     "url": "https://lecowee.astrid-perillat.fr/",
     "github": "",
     "development": ["full-stack"],
-    "goal": "Créer le site d'un coworking coffee",
-    "tools": {
-      "front": ["Bootstrap", "VueJS"],
-      "back": ["Laravel", "MySQL"],
-      "other": ["API Stripe", "Login via Google et GitHub"]
-    },
+    "goal": "Project libre clôturant ma formation. J'ai décidé de réaliser le site d'un coworking coffee, proposant un accès pour ses membres et l'inscription à des activités. J'en ai profité pour travailler avec deux frameworks : VueJS et Laravel",
+    "tools": ["Bootstrap", "VueJS", "Laravel", "MySQL", "API Stripe", "OAuth Login"],
     "objectives": [],
     "functionalities": {
       "users": [
@@ -91,23 +85,16 @@
     "url": "https://blogalaska-p4.astrid-perillat.fr/home.html",
     "github": "",
     "development": ["full-stack"],
-    "goal": "Créer le blog d’un écrivain lui permettant de rédiger et publier son nouveau roman par épisode",
-    "tools": {
-      "front": ["Bootstrap"],
-      "back": ["PHP", "MySQL"],
-      "other": ["TinyMCE"]
-    },
-    "objectives": [],
+    "goal": "Créer un site pour un écrivain, lui permettant de rédiger et publier son nouveau roman par épisode.\nIl doit donc être composé d'une interface frontend pour les lecteurs et d'une interface d'administration pour gérer les épisodes",
+    "tools": ["Bootstrap", "PHP", "MySQL", "TinyMCE"],
+    "objectives": [
+      "- pour les lecteurs : créer une interface pour accéder aux différents épisodes, et pouvoir les commenter",
+      "- pour l'écrivain : créer un dashboard d'administration, protégée par mot de passe, pour gérer ses épisodes via une interface WYSIWYG et modérer les commentaires",
+      "- pour le code : respecter une architecture MVC et la programmation orientée objet"
+    ],
     "functionalities": {
-      "users": [
-        "accéder aux différents épisodes",
-        "écrire des commentaires",
-        "signaler les commentaires inappropriés"
-      ],
-      "admin": [
-        "créer, modifier et supprimer les épisodes",
-        "modérer les commentaires"
-      ]
+      "users": [],
+      "admin": []
     },
     "images": {
       "main": "./assets/img/blog.jpg",
@@ -125,16 +112,13 @@
     "url": "https://locvelo-p3.astrid-perillat.fr/",
     "github": "",
     "development": ["front-end"],
-    "goal": "Concevoir une carte intéractive de réservation de vélo",
-    "tools": {
-      "front": ["HTML / CSS", "Javascript"],
-      "back": [],
-      "other": ["API JCDecaux", "API Leaflet"]
-    },
+    "goal": "Concevoir une Single Page Application simulant la réservation de vélos dans une ville. La page doit être composée d'un diaporama explicatif et d'une carte intéractive liée à l'API Leaflet (pour la carte) et l'API JCDecaux (pour les vélos)",
+    "tools": ["HTML / CSS", "Javascript", "API JCDecaux", "API Leaflet", "API Canvas"],
     "objectives":[
       "créer un slider intéractif pour expliquer le fonctionnement du site",
-      "permettre la réservation d'un vélo, bloquée pendant 20min",
-      "fournir la localisation et l'état des stations en temps réèl",
+      "fournir la localisation et l'état des stations en temps réel",
+      "permettre la réservation d'un vélo, temporairement enregistrée sur le navigateur",
+      "créer un champ de signature grâce à l'API Canvas",
       "afficher l'état de la réservation"
     ],
     "functionalities": {
@@ -156,23 +140,16 @@
     "url": "https://ireki.astrid-perillat.fr/",
     "github": "",
     "development": ["front-end"],
-    "goal": "Créer le site d'un office du tourisme en personnalisant un thème WordPress avec des animations CSS",
-    "tools": {
-      "front": ["Wordpress", "animations CSS"],
-      "back": [],
-      "other": ["Thème enfant Wordpress"]
-    },
+    "goal": "Créer le site d'un office du tourisme en personnalisant un thème WordPress avec des animations CSS. Le site doit respecter un cahier des charges précis et appliquer les principes du SEO. Carte blanche pour le design",
+    "tools": ["Wordpress", "CSS"],
     "objectives": [
       "créer le design et assurer la cohérence graphique du site",
-      "respecter la structure demandée : une page d'accueil, des actualités, une page d'informations, des activités à réserver et une page de contact",
+      "respecter la structure demandée dans le cahier des charges",
       "ajouter des animations CSS pour certains éléments",
       "optimiser le site pour le référencement naturel et suivre les bonnes pratiques d'accessibilité"
     ],
     "functionalities": {
-      "users": [
-        "réserver une activité",
-        "contacter les administrateurs du site"
-      ],
+      "users": [],
       "admin": []
     },
     "images": {

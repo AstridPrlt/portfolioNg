@@ -13,12 +13,16 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   projectDetails!: ProjectItem;
   indexOfActualProject!: number;
 
+  imgOfPreviousProjectUrl!: string | null;
+  imgOfNextProjectUrl!: string | null;
+  pathOfPreviousProject!: string | null;
+  pathOfNextProject!: string| null;
+
   @ViewChild("wrapper") wrapper!: ElementRef;
 
   constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2) { }
 
   ngOnInit(): void {
-
     let routeParam = this.route.params.subscribe({
       next: param => {
         console.log(param['name']);
@@ -26,6 +30,7 @@ export class ProjetComponent implements OnInit, AfterViewInit {
         this.indexOfActualProject = ProjectsJson.findIndex(p => p.path == this.projectToShow);
         this.projectDetails = ProjectsJson[this.indexOfActualProject];
         console.log(this.projectDetails);
+        this.navProjectsFromIndex();
       },
       error: err => console.log(err)
     });
@@ -56,6 +61,20 @@ export class ProjetComponent implements OnInit, AfterViewInit {
         }
       }
     }, 1000)
+  }
+
+  navProjectsFromIndex(): void {
+    let previousProject = ProjectsJson[this.indexOfActualProject - 1];
+    let nextProject = ProjectsJson[this.indexOfActualProject + 1];
+
+    this.imgOfPreviousProjectUrl = previousProject ? previousProject.images.main : null;
+    this.pathOfPreviousProject = previousProject ? previousProject.path : null;
+    this.imgOfNextProjectUrl = nextProject ? nextProject.images.main : null;
+    this.pathOfNextProject = nextProject ? nextProject.path : null;
+  }
+
+  changeProject(): void {
+    window.scrollTo(0,0);
   }
 
 }

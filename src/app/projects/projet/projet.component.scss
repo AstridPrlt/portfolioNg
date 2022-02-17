@@ -206,5 +206,27 @@ section#responsive {
 }
 
 section#footer {
-  display: flex;
+  position: relative;
+  height: 170px;
+  .navOtherProject {
+    display: flex;
+    position: absolute;
+    &.nextProject {
+      right: 0;
+    }
+    button {
+      width: 10vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      span {
+        font-size: 4rem;
+      }
+    }
+    img {
+      width: 10vw;
+    }
+  }
 }

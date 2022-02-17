@@ -25,12 +25,12 @@
   <section id="description">
     <div id="descProject">
       <h3>le projet</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus ad beatae quos sunt, in enim maxime provident facere fugiat ratione suscipit distinctio cumque nostrum sed cupiditate earum. Asperiores, officiis.</p>
+      <p>{{projectDetails.goal}}</p>
     </div>
 
     <div id="descFunctionalities">
-      <h3>les fonctionnalités</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus ad beatae quos sunt, in enim maxime provident facere fugiat ratione suscipit distinctio cumque nostrum sed cupiditate earum. Asperiores, officiis.</p>
+      <h3>les objectifs</h3>
+      <p *ngFor="let item of projectDetails.objectives">{{item}}</p>
     </div>
 
   </section>
@@ -47,24 +47,26 @@
     <div class="slider">
       <div id="wrapper" #wrapper>
         <div class="imgResponsive">
-          <img [src]="projectDetails.images.desktop" alt="">
+          <img [src]="projectDetails.images.desktop" alt="Site {{projectDetails.name}} sur desktop">
         </div>
         <div class="imgResponsive">
-          <img [src]="projectDetails.images.tablet" alt="">
+          <img [src]="projectDetails.images.tablet" alt="Site {{projectDetails.name}} sur tablette">
         </div>
         <div class="imgResponsive">
-          <img [src]="projectDetails.images.mobile" alt="">
+          <img [src]="projectDetails.images.mobile" alt="Site {{projectDetails.name}} sur mobile">
         </div>
       </div>
     </div>
   </section>
 
   <section id="footer">
-    <div class="previousProject">
-      <span>Projet précédent</span>
+    <div *ngIf="pathOfPreviousProject" class="previousProject navOtherProject">
+      <button [routerLink]="['/portfolio', pathOfPreviousProject]" (click)="changeProject()"><span class="material-icons">navigate_before</span></button>
+      <img [src]="imgOfPreviousProjectUrl" alt="Image du projet précédent">
     </div>
-    <div class="nextProject">
-      <span>Projet suivant</span>
+    <div *ngIf="pathOfNextProject" class="nextProject navOtherProject">
+      <img [src]="imgOfNextProjectUrl" alt="Image du projet suivant">
+      <button [routerLink]="['/portfolio', pathOfNextProject]" (click)="changeProject()"><span class="material-icons">navigate_next</span></button>
     </div>
   </section>
 
