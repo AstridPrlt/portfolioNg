@@ -6,7 +6,7 @@ export interface ProjectItem {
   github: string;
   development: string[];
   goal: string;
-  tools: {};
+  tools: string[];
   objectives: string[];
   functionalities: {};
   images: ProjectImages;

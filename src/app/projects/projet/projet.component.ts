@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, HostListener, Inject, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectItem } from 'src/app/_models/project-item.model';
 import ProjectsJson from '../../../assets/projectsJson.json';
@@ -6,7 +7,8 @@ import ProjectsJson from '../../../assets/projectsJson.json';
 @Component({
   selector: 'app-projet',
   templateUrl: './projet.component.html',
-  styleUrls: ['./projet.component.scss']
+  styleUrls: ['./projet.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjetComponent implements OnInit, AfterViewInit {
   projectToShow!: string;
@@ -18,9 +20,15 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   pathOfPreviousProject!: string | null;
   pathOfNextProject!: string| null;
 
+  strokeDashoffset!: number;
+
   @ViewChild("wrapper") wrapper!: ElementRef;
 
-  constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2) { }
+  @HostListener('window:scroll') onScroll(e: Event): void {
+    this.closeButtonAnimation();
+  }
+
+  constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2, @Inject(DOCUMENT) document: Document) {}
 
   ngOnInit(): void {
     let routeParam = this.route.params.subscribe({
@@ -34,10 +42,27 @@ export class ProjetComponent implements OnInit, AfterViewInit {
       },
       error: err => console.log(err)
     });
+    this.closeButtonAnimation();
   }
 
   ngAfterViewInit(): void {
     this.showResponsive();
+  }
+
+  closeButtonAnimation(): any {
+    let scrollTop = document.documentElement.scrollTop;
+    let docHeight = document.documentElement.getBoundingClientRect().height;
+    let percentage = 1-((scrollTop) / (docHeight - window.innerHeight));
+    this.strokeDashoffset = percentage;
+  }
+
+  scrollAuto(event: Event): void {
+    // window.removeEventListener('scroll', this.scrollAuto);
+    // let sectionDesc = document.getElementById('descProject');
+    // let top = sectionDesc?.getBoundingClientRect().top;
+    // if(top != undefined && top <= window.innerHeight / 2) {
+    //   sectionDesc?.scrollIntoView({block: "start", behavior: 'smooth'})
+    // }
   }
 
   showResponsive(): any {

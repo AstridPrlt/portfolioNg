@@ -5,38 +5,49 @@
   // background: $color-primary;
   // background: #062029;
   // background: black;
-  background: url("./../../../assets/img/PatternT.svg"), #383840;
+  background: url("./../../../assets/img/PatternT.svg"), #242432;
   background-attachment: fixed;
   color: floralwhite;
 }
 
 button.close {
+  width: 62px;
+  height: 62px;
   cursor: pointer;
   position: fixed;
   z-index: 1000;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px;
+  // padding: 10px;
   border-radius: 50%;
   color: floralwhite;
   border: none;
-  background: #464646;
+  outline: none;
+  background: #242432;
   opacity: 0.4;
-  transition: opacity 0.5s;
+  transition: all 0.5s ease;
   span {
     font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   svg {
     position: absolute;
-    left: -5%;
-    top: -9%;
-    z-index: 1200;
-    width: 110%;
-    height: 110%;
-    circle {
-      stroke-width: 5px;
-    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  .bg-svg {
+    stroke-width: 2;
+    stroke: white;
+  }
+  #filledSvg {
+    stroke-width: 3;
+    stroke-dasharray: 1;
+    transition: all 0.1s ease-in-out;
   }
   &:hover {
     opacity: 1;
@@ -78,7 +89,7 @@ section#hero {
     margin-left: 20%;
     // padding-top: 10%;
     overflow: hidden;
-    box-shadow: 2px 2px 10px 11px #292929;
+    box-shadow: 0px 4px 12px 4px #26262a;;
     img {
       width: 100%;
       transition: transform 1s;
@@ -90,17 +101,52 @@ section#hero {
   }
 }
 
+h3 {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 5rem;
+  margin-bottom: 30px;
+  color: gray;
+  width: fit-content;
+  /* padding: 0px 20px; */
+  transform: rotate(-90deg);
+}
+
+section#tools {
+  background: white;
+  color: black;
+  padding: 5%;
+  #toolsList {
+    color: snow;
+    display: flex;
+    justify-content: center;
+    span {
+      background: linear-gradient(to right, #904e95 51%, #e96443 100%);
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      font-size: 25px;
+    }
+  }
+}
+
+#scroller {
+  section {
+    height: 100vh;
+  }
+}
 section#description {
   margin: 80px auto;
   padding: 0 10%;
-  h3 {
-    font-family: 'Poiret One', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 30px;
+  #descProject {
+    display: flex;
   }
-  p {
-    font-size: 20px;
-    line-height: 2;
+  p, li {
+    width: 70%;
+    margin: auto;
+    line-height: 1.6;
+    white-space: pre-line;
+    font-size: 30px;
+    text-align: justify;
   }
   #descFunctionalities {
     h3 {
@@ -110,89 +156,90 @@ section#description {
 }
 
 section#responsive {
-  margin: 50px auto;
-  width: 85%;
-  height: 500px;
-  display: flex;
-  position: relative;
-  .text {
-    width: 40%;
-    position: relative;
-    p {
-      background: linear-gradient(to right, #904e95 51%, #e96443 100%);
-      box-shadow: 2px 2px 12px 2px #2e2e2e;
-      position: absolute;
-      left: 15%;
-      top: 50%;
-      z-index: 10;
-      height: 45%;
-      width: 100%;
-      // margin: 10%;
-      font-family: 'Poiret One', sans-serif;
-      font-size: 4rem;
-      line-height: 1.5;
-    }
-  }
-  .slider-dots {
-    height: 100%;
-    position: absolute;
-    z-index: 10;
-    right: -5%;
-    transform: translateX(-50%);
+  .wrapper {
+    margin: 50px auto;
+    width: 85%;
+    height: 500px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .dot {
-      width: 4rem;
-      height: 4rem;
-      // background: white;
-      // color: #0B3948;
-      // border: 5px solid $color-primary;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      color: #4f4f4f;
-      border: none;
-      background: #383840;
-      box-shadow:  10px 10px 20px #28282e,
-                  -10px -10px 20px #484852;
-      &.active {
-        // background-color: $color-primary;
-
-      background: radial-gradient(#e96443 20%, #904e95 70%);
-        // color: white;
-        color: floralwhite;
-      }
-      span {
-        font-size: 2rem;
+    position: relative;
+    .text {
+      width: 40%;
+      position: relative;
+      p {
+        background: linear-gradient(to right, #904e95 51%, #e96443 100%);
+        box-shadow: 2px 2px 12px 2px #2e2e2e;
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        z-index: 10;
+        height: 45%;
+        width: 100%;
+        // margin: 10%;
+        font-family: 'Poiret One', sans-serif;
+        font-size: 4rem;
+        line-height: 1.5;
       }
     }
-  }
-  .slider {
-    width: 50%;
-    position: relative;
-    overflow: hidden;
-    #wrapper {
-      display: flex;
-      width: 300%;
+    .slider-dots {
       height: 100%;
-      background: white;
-      animation: responsiveSliderAnim 6s ease-in-out infinite alternate;
-      // transition: transform 2s;
-      transform: translateX(-66.66%);
-      .imgResponsive {
-        // position: absolute;
+      position: absolute;
+      z-index: 10;
+      right: -5%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .dot {
+        width: 4rem;
+        height: 4rem;
+        // background: white;
+        // color: #0B3948;
+        // border: 5px solid $color-primary;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+
+        color: #4f4f4f;
+        border: none;
+        background: #242432;
+        box-shadow: 10px 10px 20px #171721, -10px -10px 20px #313144;
+        &.active {
+          // background-color: $color-primary;
+
+          background: radial-gradient(#e96443 20%, #904e95 70%);
+          // color: white;
+          color: floralwhite;
+        }
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+    .slider {
+      width: 50%;
+      position: relative;
+      overflow: hidden;
+      #wrapper {
+        display: flex;
+        width: 300%;
         height: 100%;
         background: white;
-        img {
-          max-width: 75%;
-          max-height: 75%;
+        animation: responsiveSliderAnim 6s ease-in-out infinite alternate;
+        // transition: transform 2s;
+        transform: translateX(-66.66%);
+        .imgResponsive {
+          // position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background: white;
+          img {
+            max-width: 75%;
+            max-height: 75%;
+          }
         }
       }
     }
