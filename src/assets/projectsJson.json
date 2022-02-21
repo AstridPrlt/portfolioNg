@@ -134,7 +134,7 @@
     "github": "",
     "development": ["front-end"],
     "goal": "Créer le site d'un office du tourisme en personnalisant un thème WordPress avec des animations CSS. Le site doit respecter un cahier des charges précis et appliquer les principes du SEO. Carte blanche pour le design",
-    "tools": ["Wordpress", "CSS"],
+    "tools": ["Wordpress", "Animations CSS"],
     "objectives": [
       "créer le design et assurer la cohérence graphique du site",
       "respecter la structure demandée dans le cahier des charges",

@@ -20,6 +20,8 @@
     <div id="imgHero">
       <img [src]="projectDetails.images.main" alt="image du site {{projectDetails.name}}">
     </div>
+
+    <a id="urlLink" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
   </section>
 
   <section id="tools">
@@ -39,7 +41,7 @@
     </section>
 
     <section id="objectives">
-      <div id="descFunctionalities">
+      <div id="descObjectives">
         <h3>les objectifs</h3>
         <ul>
           <li *ngFor="let item of projectDetails.objectives">{{item}}</li>
@@ -47,10 +49,10 @@
       </div>
     </section>
 
-    <section id="responsive">
+    <section id="responsive" #responsive>
       <div class="wrapper">
         <div class="text">
-          <p>un site responsive</p>
+          <p #responsiveText>design responsive<br>et accessible</p>
         </div>
         <div class="slider-dots">
           <button class="dot active"><span class="material-icons">computer</span></button>

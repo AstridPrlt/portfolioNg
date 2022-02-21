@@ -23,9 +23,12 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   strokeDashoffset!: number;
 
   @ViewChild("wrapper") wrapper!: ElementRef;
+  @ViewChild("responsive") responsive!: ElementRef;
+  @ViewChild("responsiveText") responsiveText!: ElementRef;
 
   @HostListener('window:scroll') onScroll(e: Event): void {
     this.closeButtonAnimation();
+    this.translateOnScroll();
   }
 
   constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2, @Inject(DOCUMENT) document: Document) {}
@@ -47,6 +50,7 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.showResponsive();
+    this.translateOnScroll();
   }
 
   closeButtonAnimation(): any {
@@ -54,6 +58,11 @@ export class ProjetComponent implements OnInit, AfterViewInit {
     let docHeight = document.documentElement.getBoundingClientRect().height;
     let percentage = 1-((scrollTop) / (docHeight - window.innerHeight));
     this.strokeDashoffset = percentage;
+  }
+
+  translateOnScroll(): void {
+    let responsiveTop = this.responsive.nativeElement.getBoundingClientRect().top;
+    this._renderer.setStyle(this.responsiveText.nativeElement, 'transform', `translate3d(${0.5 * responsiveTop}px, ${0.35 * responsiveTop}px, 0px)`);
   }
 
   scrollAuto(event: Event): void {
