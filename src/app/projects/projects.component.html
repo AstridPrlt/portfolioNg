@@ -1,6 +1,6 @@
 <div id="projectsListPage">
 
-  <div id="listOfProjects" #listOfProjects>
+  <!-- <div id="listOfProjects" #listOfProjects>
     <div class="projectCard" *ngFor="let project of list">
       <div class="devCategory">
         <span *ngFor="let item of project.development">{{item}}</span>
@@ -8,9 +8,9 @@
       <img [src]="project.images.main" alt="">
       <a [routerLink]="['/portfolio', project.path]">{{project.name}}</a>
     </div>
-  </div>
+  </div> -->
 
-  <section id="nav">
+  <!-- <section id="nav">
     <div id="progressionBar">
       <div id="fixePart" #fixePart></div>
       <div id="growingPart" #growingPart></div>
@@ -22,6 +22,30 @@
       <button (click)="navNext()" type="button">
         <span class="material-icons">arrow_forward</span>
       </button>
+    </div>
+  </section> -->
+
+
+  <section id="projectsHero">
+    <img src="./assets/img/home2.jpg" alt="">
+    <h2>Mes Projets</h2>
+
+  </section>
+
+  <section id="listOfProjects" #listOfProjects>
+    <div class="projectCard" *ngFor="let project of list">
+      <img [src]="project.images.main" class="projectsImg" alt="image du site {{project.name}}">
+      <div class="cardText">
+        <a [routerLink]="['/portfolio', project.path]" class="projectLinks">{{project.name}}</a>
+        <div class="devCategory">
+          <span *ngFor="let item of project.development">{{item}}</span>
+        </div>
+        <div class="cardButtons">
+          <button [routerLink]="['/portfolio', project.path]" class="projectButtons" type="button"><span class="material-icons">visibility</span> <span class="text project"></span></button>
+          <button class="projectButtons" type="button"><a href="{{project.url}}" target="_blank" class="siteLinks"><span class="material-icons">reply</span> <span class="text site"></span></a></button>
+        </div>
+      </div>
+
     </div>
   </section>
 

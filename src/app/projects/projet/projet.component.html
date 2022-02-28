@@ -21,7 +21,7 @@
       <img [src]="projectDetails.images.main" alt="image du site {{projectDetails.name}}">
     </div>
 
-    <a id="urlLink" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
+    <a class="urlLink" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
   </section>
 
   <section id="tools">
@@ -77,7 +77,10 @@
 
   </div>
 
+
   <section id="footer">
+    <a class="urlLink" id="linkBottom" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
+
     <div *ngIf="pathOfPreviousProject" class="previousProject navOtherProject">
       <button [routerLink]="['/portfolio', pathOfPreviousProject]" (click)="changeProject()"><span class="material-icons">navigate_before</span></button>
       <img [src]="imgOfPreviousProjectUrl" alt="Image du projet précédent">

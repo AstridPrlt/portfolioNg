@@ -1,4 +1,4 @@
-import { Component, ElementRef, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { ProjectItem } from '../_models/project-item.model';
 import ProjectsJson from '../../assets/projectsJson.json';
 import { DOCUMENT } from '@angular/common';
@@ -22,6 +22,11 @@ export class ProjectsComponent implements OnInit {
   widthProgressionBar!: number;
   listWidth!: number;
   barWidth!: number;
+
+  @HostListener('mousemove', ['$event']) onMousemove(event: MouseEvent): void {
+    console.log(event);
+
+  }
 
   constructor(private _renderer: Renderer2, @Inject(DOCUMENT) document: Document) { }
 

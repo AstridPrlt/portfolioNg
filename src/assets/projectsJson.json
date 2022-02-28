@@ -5,7 +5,7 @@
     "date": "2021",
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
-    "development": ["intégration", "front-end"],
+    "development": ["intégration web", "angular", "scss", "figma"],
     "goal": "Challenge du site FrontendMentor : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
     "tools": ["Angular", "SCSS", "Figma"],
     "objectives": [
@@ -17,9 +17,9 @@
     },
     "images": {
       "main": "./assets/img/space.jpg",
-      "desktop": "",
-      "tablet": "",
-      "mobile": ""
+      "desktop": "./assets/img/mockups/spaceLaptop.png",
+      "tablet": "./assets/img/mockups/spaceTablet.png",
+      "mobile": "./assets/img/mockups/spaceMobile.png"
     }
   },
 
@@ -29,7 +29,7 @@
     "date": "2021",
     "url": "https://astridprlt.github.io/room-homepage/",
     "github": "https://github.com/AstridPrlt/room-homepage",
-    "development": ["intégration", "front-end"],
+    "development": ["intégration web", "javascript"],
     "goal": "Challenge du site FrontendMentor : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
     "tools": ["HTML / CSS", "Javascript"],
     "objectives": [],
@@ -51,7 +51,7 @@
     "date": "2020",
     "url": "https://lecowee.astrid-perillat.fr/",
     "github": "",
-    "development": ["full-stack"],
+    "development": ["full-stack", "vueJs", "laravel"],
     "goal": "Project libre clôturant ma formation. J'ai décidé de réaliser le site d'un coworking coffee, proposant un accès pour ses membres et l'inscription à des activités. J'en ai profité pour travailler avec deux frameworks : VueJS et Laravel",
     "tools": ["Bootstrap", "VueJS", "Laravel", "MySQL", "API Stripe", "OAuth Login"],
     "objectives": [
@@ -77,7 +77,7 @@
     "date": "2020",
     "url": "https://blogalaska-p4.astrid-perillat.fr/home.html",
     "github": "",
-    "development": ["full-stack"],
+    "development": ["full-stack", "bootstrap", "php"],
     "goal": "Créer un site pour un écrivain, lui permettant de rédiger et publier son nouveau roman par épisode.\nIl doit donc être composé d'une interface frontend pour les lecteurs et d'une interface d'administration pour gérer les épisodes",
     "tools": ["Bootstrap", "PHP", "MySQL", "TinyMCE"],
     "objectives": [
@@ -104,7 +104,7 @@
     "date": "2020",
     "url": "https://locvelo-p3.astrid-perillat.fr/",
     "github": "",
-    "development": ["front-end"],
+    "development": ["front-end", "javascript"],
     "goal": "Concevoir une Single Page Application simulant la réservation de vélos dans une ville.\nLa page doit être composée d'un <span>diaporama explicatif</span> et d'une carte intéractive liée à l'API Leaflet (pour la carte) et l'API JCDecaux (pour les vélos)",
     "tools": ["HTML / CSS", "Javascript", "API JCDecaux", "API Leaflet", "API Canvas"],
     "objectives":[
@@ -132,7 +132,7 @@
     "date": "2020",
     "url": "https://ireki.astrid-perillat.fr/",
     "github": "",
-    "development": ["front-end"],
+    "development": ["front-end", "wordpress"],
     "goal": "Créer le site d'un office du tourisme en personnalisant un thème WordPress avec des animations CSS. Le site doit respecter un cahier des charges précis et appliquer les principes du SEO. Carte blanche pour le design",
     "tools": ["Wordpress", "Animations CSS"],
     "objectives": [
