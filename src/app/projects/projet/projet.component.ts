@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, HostListener, Inject, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, HostListener, Inject, Input, OnInit, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectItem } from 'src/app/_models/project-item.model';
 import ProjectsJson from '../../../assets/projectsJson.json';
@@ -22,18 +22,25 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
   strokeDashoffset!: number;
 
+  @ViewChild("projectTitle") projectTitle!: ElementRef;
+  @ViewChild("objectivesTitle") objectivesTitle!: ElementRef;
   @ViewChild("wrapper") wrapper!: ElementRef;
   @ViewChild("responsive") responsive!: ElementRef;
   @ViewChild("responsiveText") responsiveText!: ElementRef;
+
+  @ViewChildren("sliderImage") sliderImage!: QueryList<ElementRef>;
+  actualSlide!: number;
 
   @HostListener('window:scroll') onScroll(e: Event): void {
     this.closeButtonAnimation();
     this.translateOnScroll();
   }
 
-  constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2, @Inject(DOCUMENT) document: Document) {}
+  constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2, @Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
+    this.loadProject();
+
     let routeParam = this.route.params.subscribe({
       next: param => {
         console.log(param['name']);
@@ -46,6 +53,8 @@ export class ProjetComponent implements OnInit, AfterViewInit {
       error: err => console.log(err)
     });
     this.closeButtonAnimation();
+
+    this.actualSlide = 0;
   }
 
   ngAfterViewInit(): void {
@@ -53,16 +62,38 @@ export class ProjetComponent implements OnInit, AfterViewInit {
     this.translateOnScroll();
   }
 
+  previousSlide(): void {
+    if(this.actualSlide > 0) {
+      let imgToRemove = this.sliderImage.get(this.actualSlide)?.nativeElement;
+      this._renderer.removeClass(imgToRemove, 'show');
+      this.actualSlide -= 1;
+    }
+  }
+  nextSlide(): void {
+    if(this.actualSlide < this.sliderImage.length -1) {
+      this.actualSlide += 1;
+      let imgShowed = this.sliderImage.get(this.actualSlide)?.nativeElement;
+      this._renderer.addClass(imgShowed, 'show');
+    }
+  }
+
+
   closeButtonAnimation(): any {
-    let scrollTop = document.documentElement.scrollTop;
-    let docHeight = document.documentElement.getBoundingClientRect().height;
+    let scrollTop = this.document.documentElement.scrollTop;
+    let docHeight = this.document.documentElement.getBoundingClientRect().height;
     let percentage = 1-((scrollTop) / (docHeight - window.innerHeight));
     this.strokeDashoffset = percentage;
   }
 
   translateOnScroll(): void {
     let responsiveTop = this.responsive.nativeElement.getBoundingClientRect().top;
+    let projectTitleTop = this.projectTitle.nativeElement.getBoundingClientRect().top;
+    let objectivesTitleTop = this.objectivesTitle.nativeElement.getBoundingClientRect().top;
+
     this._renderer.setStyle(this.responsiveText.nativeElement, 'transform', `translate3d(${0.5 * responsiveTop}px, ${0.35 * responsiveTop}px, 0px)`);
+    this._renderer.setStyle(this.projectTitle.nativeElement, 'transform', `translate3d(0px, ${0.4 * projectTitleTop}px, 0px)`);
+    this._renderer.setStyle(this.objectivesTitle.nativeElement, 'transform', `translate3d(${-0.8 * objectivesTitleTop}px, 0px, 0px)`);
+
   }
 
   scrollAuto(event: Event): void {
@@ -80,11 +111,11 @@ export class ProjetComponent implements OnInit, AfterViewInit {
     setInterval(() => {
       let leftOffset = this.wrapper.nativeElement.getBoundingClientRect().left;
       if(this.wrapper.nativeElement) {
-        if(leftOffset > document.body.clientWidth *(1/3)) {
+        if(leftOffset > this.document.body.clientWidth*0.85 *(1/3)) {
           this._renderer.addClass(sliderArray[0], 'active');
           this._renderer.removeClass(sliderArray[1], 'active');
           this._renderer.removeClass(sliderArray[2], 'active');
-        } else if(leftOffset < document.body.clientWidth * (-1/3)) {
+        } else if(leftOffset < this.document.body.clientWidth*0.85 * (-1/3)) {
           this._renderer.addClass(sliderArray[2], 'active');
           this._renderer.removeClass(sliderArray[1], 'active');
           this._renderer.removeClass(sliderArray[0], 'active');
@@ -107,7 +138,7 @@ export class ProjetComponent implements OnInit, AfterViewInit {
     this.pathOfNextProject = nextProject ? nextProject.path : null;
   }
 
-  changeProject(): void {
+  loadProject(): void {
     window.scrollTo(0,0);
   }
 

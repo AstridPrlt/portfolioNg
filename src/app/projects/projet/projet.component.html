@@ -25,8 +25,8 @@
   </section>
 
   <section id="tools">
-    <h3>les outils</h3>
     <div id="toolsList">
+      <h3>les outils</h3>
       <span *ngFor="let item of projectDetails.tools">{{item}}</span>
     </div>
   </section>
@@ -35,14 +35,41 @@
 
     <section id="description">
       <div id="descProject">
-        <h3>le projet</h3>
+        <h3 #projectTitle>le projet</h3>
         <p [innerHTML]="projectDetails.goal"></p>
+      </div>
+    </section>
+
+    <section id="siteImages">
+      <div id="siteImagesText">
+        <h3>Quelques extraits</h3>
+        <div class="sliderNav">
+          <div class="nav">
+            <button (click)="previousSlide()"><span class="material-icons">west</span></button>
+            <button (click)="nextSlide()"><span class="material-icons">east</span></button>
+          </div>
+          <span class="count">
+            {{actualSlide +1}} / {{projectDetails.siteImages.length}}
+          </span>
+        </div>
+      </div>
+      <div id="siteImagesSlider">
+        <img [id]="0" class="sliderImage show" srcset="{{projectDetails.siteImages[0]}}-1300.png 1300w, {{projectDetails.siteImages[0]}}-600.png 600w"
+        sizes="(max-width: 1200px) 600px,
+                1300px"
+        src="{{projectDetails.siteImages[0]}}-1300.png"
+        alt="Screenshots des pages du site">
+        <img [id]="i" class="sliderImage" #sliderImage *ngFor="let item of projectDetails.siteImages; let i = index" srcset="{{item}}-1300.png 1300w, {{item}}-600.png 600w"
+            sizes="(max-width: 1200px) 600px,
+                    1300px"
+            src="{{item}}-1300.png"
+            alt="Screenshots des pages du site">
       </div>
     </section>
 
     <section id="objectives">
       <div id="descObjectives">
-        <h3>les objectifs</h3>
+        <h3 #objectivesTitle>mes<br>objectifs</h3>
         <ul>
           <li *ngFor="let item of projectDetails.objectives">{{item}}</li>
         </ul>
@@ -52,7 +79,7 @@
     <section id="responsive" #responsive>
       <div class="wrapper">
         <div class="text">
-          <p #responsiveText>design responsive<br>et accessible</p>
+          <p #responsiveText>un design<br>responsive<br>et accessible</p>
         </div>
         <div class="slider-dots">
           <button class="dot active"><span class="material-icons">computer</span></button>
@@ -82,12 +109,12 @@
     <a class="urlLink" id="linkBottom" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
 
     <div *ngIf="pathOfPreviousProject" class="previousProject navOtherProject">
-      <button [routerLink]="['/portfolio', pathOfPreviousProject]" (click)="changeProject()"><span class="material-icons">navigate_before</span></button>
+      <button [routerLink]="['/portfolio', pathOfPreviousProject]" (click)="loadProject()"><span class="material-icons">navigate_before</span></button>
       <img [src]="imgOfPreviousProjectUrl" alt="Image du projet précédent">
     </div>
     <div *ngIf="pathOfNextProject" class="nextProject navOtherProject">
       <img [src]="imgOfNextProjectUrl" alt="Image du projet suivant">
-      <button [routerLink]="['/portfolio', pathOfNextProject]" (click)="changeProject()"><span class="material-icons">navigate_next</span></button>
+      <button [routerLink]="['/portfolio', pathOfNextProject]" (click)="loadProject()"><span class="material-icons">navigate_next</span></button>
     </div>
   </section>
 

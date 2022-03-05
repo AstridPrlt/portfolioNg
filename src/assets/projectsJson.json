@@ -6,10 +6,11 @@
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
     "development": ["intégration web", "angular", "scss", "figma"],
-    "goal": "Challenge du site FrontendMentor : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
+    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3' target='_blank' class='a-json'>FrontendMentor</a> : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
     "tools": ["Angular", "SCSS", "Figma"],
     "objectives": [
-      "créer l'interface sous forme de Single Page Application"
+      "créer l'interface sous forme de Single Page Application",
+      "apprendre à utiliser Figma et Sass"
     ],
     "functionalities": {
       "users": [],
@@ -20,7 +21,13 @@
       "desktop": "./assets/img/mockups/spaceLaptop.png",
       "tablet": "./assets/img/mockups/spaceTablet.png",
       "mobile": "./assets/img/mockups/spaceMobile.png"
-    }
+    },
+    "siteImages": [
+      "./assets/img/sitesImg/space1",
+      "./assets/img/sitesImg/space2",
+      "./assets/img/sitesImg/space3",
+      "./assets/img/sitesImg/space4"
+    ]
   },
 
   {
@@ -30,7 +37,7 @@
     "url": "https://astridprlt.github.io/room-homepage/",
     "github": "https://github.com/AstridPrlt/room-homepage",
     "development": ["intégration web", "javascript"],
-    "goal": "Challenge du site FrontendMentor : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
+    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq' target='_blank'>FrontendMentor</a> : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
     "tools": ["HTML / CSS", "Javascript"],
     "objectives": [],
     "functionalities": {
@@ -42,7 +49,10 @@
       "desktop": "./assets/img/mockups/roomLaptop.png",
       "tablet": "./assets/img/mockups/roomTablet.png",
       "mobile": "./assets/img/mockups/roomMobile.png"
-    }
+    },
+    "siteImages": [
+
+    ]
   },
 
   {
@@ -68,7 +78,16 @@
       "desktop": "./assets/img/mockups/coweeLaptop.png",
       "tablet": "./assets/img/mockups/coweeTablet.png",
       "mobile": "./assets/img/mockups/coweeMobile.png"
-    }
+    },
+    "siteImages": [
+      "./assets/img/sitesImg/cowee1",
+      "./assets/img/sitesImg/cowee2",
+      "./assets/img/sitesImg/cowee3",
+      "./assets/img/sitesImg/cowee4",
+      "./assets/img/sitesImg/cowee5",
+      "./assets/img/sitesImg/cowee6",
+      "./assets/img/sitesImg/cowee7"
+    ]
   },
 
   {
@@ -82,7 +101,7 @@
     "tools": ["Bootstrap", "PHP", "MySQL", "TinyMCE"],
     "objectives": [
       "pour les lecteurs : créer une interface pour accéder aux différents épisodes, et pouvoir les commenter",
-      "pour l'écrivain : créer un dashboard d'administration, protégée par mot de passe, pour gérer ses épisodes via une interface WYSIWYG et modérer les commentaires",
+      "pour l'écrivain : créer un dashboard d'administration, protégé par mot de passe, pour gérer ses épisodes via une interface WYSIWYG et modérer les commentaires",
       "pour le code : respecter une architecture MVC et la programmation orientée objet"
     ],
     "functionalities": {
@@ -94,7 +113,15 @@
       "desktop": "./assets/img/mockups/blogLaptop.png",
       "tablet": "./assets/img/mockups/blogTablet.png",
       "mobile": "./assets/img/mockups/blogMobile.png"
-    }
+    },
+    "siteImages": [
+      "./assets/img/sitesImg/blog1",
+      "./assets/img/sitesImg/blog2",
+      "./assets/img/sitesImg/blog3",
+      "./assets/img/sitesImg/blog4",
+      "./assets/img/sitesImg/blog5",
+      "./assets/img/sitesImg/blog6"
+    ]
   },
 
 
@@ -123,7 +150,13 @@
       "desktop": "./assets/img/mockups/rideLaptop.png",
       "tablet": "./assets/img/mockups/rideTablet.png",
       "mobile": "./assets/img/mockups/rideMobile.png"
-    }
+    },
+    "siteImages": [
+      "./assets/img/sitesImg/ride1",
+      "./assets/img/sitesImg/ride2",
+      "./assets/img/sitesImg/ride3",
+      "./assets/img/sitesImg/ride4"
+    ]
   },
 
   {
@@ -136,7 +169,7 @@
     "goal": "Créer le site d'un office du tourisme en personnalisant un thème WordPress avec des animations CSS. Le site doit respecter un cahier des charges précis et appliquer les principes du SEO. Carte blanche pour le design",
     "tools": ["Wordpress", "Animations CSS"],
     "objectives": [
-      "créer le design et assurer la cohérence graphique du site",
+      "créer le design, les textes et assurer la cohérence graphique du site",
       "respecter la structure demandée dans le cahier des charges",
       "ajouter des animations CSS pour certains éléments",
       "optimiser le site pour le référencement naturel et suivre les bonnes pratiques d'accessibilité"
@@ -150,6 +183,13 @@
       "desktop": "",
       "tablet": "",
       "mobile": ""
-    }
+    },
+    "siteImages": [
+      "./assets/img/sitesImg/ireki1",
+      "./assets/img/sitesImg/ireki2",
+      "./assets/img/sitesImg/ireki3",
+      "./assets/img/sitesImg/ireki4",
+      "./assets/img/sitesImg/ireki5"
+    ]
   }
 ]

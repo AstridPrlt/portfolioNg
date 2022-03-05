@@ -10,6 +10,7 @@ export interface ProjectItem {
   objectives: string[];
   functionalities: {};
   images: ProjectImages;
+  siteImages: string[]
 }
 
 export interface ProjectImages {

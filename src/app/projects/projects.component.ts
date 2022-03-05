@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit {
 
   }
 
-  constructor(private _renderer: Renderer2, @Inject(DOCUMENT) document: Document) { }
+  constructor(private _renderer: Renderer2, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
     console.log(this.list);
@@ -41,16 +41,16 @@ export class ProjectsComponent implements OnInit {
     this.listWidth = this.listOfProjects.nativeElement.getBoundingClientRect().width;
     this.barWidth = this.fixePart.nativeElement.getBoundingClientRect().width;
 
-    this.widthProgressionBar = 1 - ((this.listPositionRight - document.body.clientWidth)/ this.listWidth);
+    this.widthProgressionBar = 1 - ((this.listPositionRight - this.document.body.clientWidth)/ this.listWidth);
     this._renderer.setStyle(this.growingPart.nativeElement, 'width', `${this.widthProgressionBar*100}%`);
   }
 
   navNext(): void {
     this.listPositionRight = this.listOfProjects.nativeElement.getBoundingClientRect().right;
-    if(this.listPositionRight > document.body.clientWidth*0.95) {
+    if(this.listPositionRight > this.document.body.clientWidth*0.95) {
         let distanceToMove;
-        if(this.listPositionRight - this.navScroll < document.body.clientWidth*0.95 ) {
-          distanceToMove = this.listPositionLeft - (this.listPositionRight - document.body.clientWidth*0.95);
+        if(this.listPositionRight - this.navScroll < this.document.body.clientWidth*0.95 ) {
+          distanceToMove = this.listPositionLeft - (this.listPositionRight - this.document.body.clientWidth*0.95);
         } else {
           distanceToMove = this.listPositionLeft - this.navScroll;
         }
@@ -83,7 +83,7 @@ export class ProjectsComponent implements OnInit {
 
   setProgressionBarTranslate(): void {
     console.log(this.widthProgressionBar);
-    let widthProgressionBarCalculation = 1 - ((this.listPositionRight - this.navScroll - document.body.clientWidth)/this.listOfProjects.nativeElement.getBoundingClientRect().width);
+    let widthProgressionBarCalculation = 1 - ((this.listPositionRight - this.navScroll - this.document.body.clientWidth)/this.listOfProjects.nativeElement.getBoundingClientRect().width);
     this.widthProgressionBar = widthProgressionBarCalculation > 1 ? 1 : widthProgressionBarCalculation;
     this._renderer.setStyle(this.growingPart.nativeElement, 'width', `${this.widthProgressionBar*100}%`);
 
