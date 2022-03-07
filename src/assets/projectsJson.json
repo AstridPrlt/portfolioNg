@@ -5,17 +5,15 @@
     "date": "2021",
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
-    "development": ["intégration web", "angular", "scss", "figma"],
+    "development": ["intégration web", "angular", "typescript", "scss", "figma"],
     "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3' target='_blank' class='a-json'>FrontendMentor</a> : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
     "tools": ["Angular", "SCSS", "Figma"],
     "objectives": [
-      "créer l'interface sous forme de Single Page Application",
+      "créer l'interface sous forme de <strong>Single Page Application</strong>",
+      "reproduire fidèlement la <strong>maquette</strong>",
+      "assurer la <strong>responsivité</strong> du design",
       "apprendre à utiliser Figma et Sass"
     ],
-    "functionalities": {
-      "users": [],
-      "admin": []
-    },
     "images": {
       "main": "./assets/img/space.jpg",
       "desktop": "./assets/img/mockups/spaceLaptop.png",
@@ -40,10 +38,6 @@
     "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq' target='_blank'>FrontendMentor</a> : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
     "tools": ["HTML / CSS", "Javascript"],
     "objectives": [],
-    "functionalities": {
-      "users": [],
-      "admin": []
-    },
     "images": {
       "main": "./assets/img/room.jpg",
       "desktop": "./assets/img/mockups/roomLaptop.png",
@@ -61,18 +55,14 @@
     "date": "2020",
     "url": "https://lecowee.astrid-perillat.fr/",
     "github": "",
-    "development": ["full-stack", "vueJs", "laravel"],
-    "goal": "Project libre clôturant ma formation. J'ai décidé de réaliser le site d'un coworking coffee, proposant un accès pour ses membres et l'inscription à des activités. J'en ai profité pour travailler avec deux frameworks : VueJS et Laravel",
+    "development": ["full-stack", "bootstrap", "vueJs", "laravel"],
+    "goal": "Project libre clôturant ma formation.<br>J'ai choisi de réaliser, avec des frameworks, le site d'un coworking coffee proposant un accès pour ses membres et l'inscription à des activités.",
     "tools": ["Bootstrap", "VueJS", "Laravel", "MySQL", "API Stripe", "OAuth Login"],
     "objectives": [
-      "créer une partie vitrine pour pésenter le café, son fonctionnement et ses évènements",
-      "permettre aux utilisateurs de créer un profil, réserver et payer un évènement, et communiquer avec d'autres membres",
-      "créer un dashboard d'administration pour gérer les évènements et la communauté"
+      "créer une <strong>partie vitrine</strong> pour présenter le café, son fonctionnement et ses évènements",
+      "permettre aux <strong>visiteurs</strong> de créer un profil, réserver et payer un évènement, et communiquer avec d'autres membres",
+      "créer un <strong>dashboard d'administration</strong> pour gérer les évènements et la communauté"
     ],
-    "functionalities": {
-      "users": [],
-      "admin": []
-    },
     "images": {
       "main": "./assets/img/cowee.jpg",
       "desktop": "./assets/img/mockups/coweeLaptop.png",
@@ -96,7 +86,7 @@
     "date": "2020",
     "url": "https://blogalaska-p4.astrid-perillat.fr/home.html",
     "github": "",
-    "development": ["full-stack", "bootstrap", "php"],
+    "development": ["full-stack", "bootstrap", "php", "mySql"],
     "goal": "Créer un site pour un écrivain, lui permettant de rédiger et publier son nouveau roman par épisode.\nIl doit donc être composé d'une interface frontend pour les lecteurs et d'une interface d'administration pour gérer les épisodes",
     "tools": ["Bootstrap", "PHP", "MySQL", "TinyMCE"],
     "objectives": [
@@ -104,10 +94,6 @@
       "pour l'écrivain : créer un dashboard d'administration, protégé par mot de passe, pour gérer ses épisodes via une interface WYSIWYG et modérer les commentaires",
       "pour le code : respecter une architecture MVC et la programmation orientée objet"
     ],
-    "functionalities": {
-      "users": [],
-      "admin": []
-    },
     "images": {
       "main": "./assets/img/blog.jpg",
       "desktop": "./assets/img/mockups/blogLaptop.png",
@@ -141,10 +127,6 @@
       "créer un champ de signature grâce à l'API Canvas",
       "afficher l'état de la réservation"
     ],
-    "functionalities": {
-      "users": [],
-      "admin": []
-    },
     "images": {
       "main": "./assets/img/rideup.jpg",
       "desktop": "./assets/img/mockups/rideLaptop.png",
@@ -174,10 +156,6 @@
       "ajouter des animations CSS pour certains éléments",
       "optimiser le site pour le référencement naturel et suivre les bonnes pratiques d'accessibilité"
     ],
-    "functionalities": {
-      "users": [],
-      "admin": []
-    },
     "images": {
       "main": "./assets/img/ireki.jpg",
       "desktop": "",

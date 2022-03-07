@@ -1,23 +1,50 @@
 <div id="home">
 
-  <div id="avatar" #avatar @animationAvatar *ngIf="!isMenuShowed" >
+  <!-- <div id="avatar" #avatar @animationAvatar *ngIf="!isMenuShowed" >
     <p class="textHello" #textHello>Hello</p>
     <img class="avatarImg" src="./../../assets/img/Avatar.svg" alt="">
     <p class="textWorld" #textWorld>World !</p>
-  </div>
+  </div> -->
 
   <div id="homePage" *ngIf="isMenuShowed" #homePage @animationHomePage>
     <div id="welcomeText">
-      <h2><span>Bienvenue</span><br>sur mon portfolio</h2>
-      <p>installez-vous confortablement, et laissez-moi vous présenter mes projets web.<br>
-      de l'intégration de maquettes au développement full-stack, ils sont toujours responsives et accessibles</p>
-      <button type="button" class="btn-grad" routerLink="/portfolio">Voir mes projets</button>
+      <h2><span>Bienvenue</span><br>sur mon portfolio !</h2>
+      <p>Je suis developpeuse web, passionnée par le front-end<br>
+        Je réalise des sites responsive, en phase avec les normes d’accessibilité et performants.</p>
+      <p>Laissez-moi vous présenter mes projets et vous en dire un peu plus sur moi</p>
+
+      <div class="homeButtons">
+
+        <div class="nav navPortfolio">
+          <div class="arrowAndText">
+            <span class="text">c'est par ici</span>
+            <span class="material-icons">reply</span>
+          </div>
+          <button type="button" class="btn-grad" routerLink="/portfolio">Voir mes projets</button>
+        </div>
+
+        <div class="nav navInfo">
+          <div class="arrowAndText">
+            <span class="material-icons">reply</span>
+            <span class="text">c'est là</span>
+          </div>
+          <button type="button" class="btn-simple" routerLink="/portfolio">En savoir plus</button>
+        </div>
+      </div>
+
     </div>
     <div class="img">
-      <img class="clip1" src="./../../assets/img/home2.jpg" alt="">
-      <img class="clip2" src="./../../assets/img/home2.jpg" alt="">
-      <img class="clip3" src="./../../assets/img/home2.jpg" alt="">
+      <img class="clip1" src="/assets/img/home2.jpg" alt="">
+      <img class="clip2" src="/assets/img/home2.jpg" alt="">
+      <img class="clip3" src="/assets/img/home2.jpg" alt="">
     </div>
+    <!-- <div class="imgClip">
+      <img class="img1" src="/assets/img/home2.jpg" alt="">
+      <img class="img2" src="/assets/img/blog2.jpg" alt="">
+      <img class="img3" src="/assets/img/ireki.jpg" alt="">
+      <img class="img4" src="/assets/img/rideup2.jpg" alt="">
+      <img class="img5" src="/assets/img/cowee2.jpg" alt="">
+    </div> -->
   </div>
 
 </div>

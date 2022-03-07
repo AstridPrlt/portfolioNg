@@ -8,7 +8,6 @@ export interface ProjectItem {
   goal: string;
   tools: string[];
   objectives: string[];
-  functionalities: {};
   images: ProjectImages;
   siteImages: string[]
 }

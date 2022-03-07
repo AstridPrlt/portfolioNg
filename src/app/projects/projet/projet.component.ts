@@ -29,7 +29,7 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   @ViewChild("responsiveText") responsiveText!: ElementRef;
 
   @ViewChildren("sliderImage") sliderImage!: QueryList<ElementRef>;
-  actualSlide!: number;
+  actualSlide: number = 0;
 
   @HostListener('window:scroll') onScroll(e: Event): void {
     this.closeButtonAnimation();
@@ -39,7 +39,7 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2, @Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
-    this.loadProject();
+    window.scrollTo(0,0);
 
     let routeParam = this.route.params.subscribe({
       next: param => {
@@ -139,7 +139,8 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   }
 
   loadProject(): void {
-    window.scrollTo(0,0);
+    this.ngOnInit();
+    this.ngAfterViewInit();
   }
 
 }

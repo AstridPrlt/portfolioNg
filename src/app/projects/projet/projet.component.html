@@ -42,7 +42,7 @@
 
     <section id="siteImages">
       <div id="siteImagesText">
-        <h3>Quelques extraits</h3>
+        <h3>Le projet<br>en images...</h3>
         <div class="sliderNav">
           <div class="nav">
             <button (click)="previousSlide()"><span class="material-icons">west</span></button>
@@ -71,7 +71,7 @@
       <div id="descObjectives">
         <h3 #objectivesTitle>mes<br>objectifs</h3>
         <ul>
-          <li *ngFor="let item of projectDetails.objectives">{{item}}</li>
+          <li *ngFor="let item of projectDetails.objectives" [innerHTML]="item"></li>
         </ul>
       </div>
     </section>
