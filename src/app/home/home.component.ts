@@ -29,10 +29,10 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/co
       transition(':enter', [
         query('#welcomeText', style({ opacity: 0 })),
         query('.img img', style({ opacity: 0 })),
-        query('#welcomeText', animate('200ms', style({ opacity: 1 }))),
-        query('.img .clip1', animate('200ms ease-in', style({ opacity: 1 }))),
-        query('.img .clip2', animate('200ms ease-in', style({ opacity: 1 }))),
-        query('.img .clip3', animate('200ms ease-in', style({ opacity: 1 }))),
+        query('.img .clip1', animate('200ms ease-in-out', style({ opacity: 1 }))),
+        query('.img .clip2', animate('200ms ease-in-out', style({ opacity: 1 }))),
+        query('.img .clip3', animate('200ms ease-in-out', style({ opacity: 1 }))),
+        query('#welcomeText', animate('200ms ease-in-out', style({ opacity: 1 }))),
       ])
     ])
   ]

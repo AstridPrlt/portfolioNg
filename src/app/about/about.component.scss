@@ -1,0 +1,70 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: url("/assets/img/PatternT.svg"), #242432;
+  background-attachment: fixed;
+  color: floralwhite;
+}
+
+section {
+  margin: 30px;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.training {
+  display: flex;
+
+  div {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: pink;
+      border: 2px solid pink;
+    }
+
+    h4 {
+      color: pink;
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    span.year {
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    span.school {
+      font-style: italic;
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
