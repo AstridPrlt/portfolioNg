@@ -73,7 +73,7 @@ section#listOfProjects {
         display: block;
         position: absolute;
         z-index: -1;
-        background: #242432;
+        background: #40405c;
         opacity: 0;
         border-radius: 16px;
         transform: translateX(-10%);
@@ -83,10 +83,10 @@ section#listOfProjects {
         text-decoration: none;
         color: #242432;
         // color: white;
-        font-family: 'Marcellus', serif;
-        // font-family: 'DM Serif Display', serif;
-        font-size: 6rem;
-        text-shadow: 3px 4px 7px #818181;
+        // font-family: 'Marcellus', serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 5rem;
+        text-shadow: 1px 3px 8px #818181;
         transform: translateY(-40%);
         transition: all 0.4s ease-in-out;
       }
@@ -112,7 +112,7 @@ section#listOfProjects {
         transform: translateX(-50%);
         display: flex;
         opacity: 0;
-        button {
+        button.projectButtons {
           border: none;
           outline: none;
           font-size: 18px;
@@ -126,6 +126,13 @@ section#listOfProjects {
           position: relative;
           display: flex;
           white-space: nowrap;
+          box-shadow:  1px 1px 3px 0px #a3a1a8;
+          &:first-of-type {
+            border-radius: 10px 0 0 10px;
+          }
+          &:last-of-type {
+            border-radius: 0 10px 10px 0;
+          }
           a.siteLinks {
             text-decoration: none;
             color: inherit;
@@ -148,11 +155,13 @@ section#listOfProjects {
             top: 0;
             right: -100%;
             z-index: -1;
-            background: #904e95;
+            background-image: linear-gradient(to right, #e96443, #904e95 65%);
+            box-shadow: inset -9px -14px 20px #7a427f, inset 9px 7px 20px #e4826c;
             font-family: "Mulish", sans-serif;
+            text-transform: uppercase;
             transform: scaleX(0);
             &.project::before {
-              content: "Voir les détails";
+              content: "les détails";
             }
             &.site::before {
               content: "Voir le site";
@@ -166,12 +175,18 @@ section#listOfProjects {
               color: white;
               opacity: 0;
               transition: transform 0.3s ease-in-out, opacity 0.2s;
+              font-size: 0.8rem;
+              font-weight: 600;
+              letter-spacing: 1.1px;
+              text-transform: uppercase;
             }
           }
 
           &:hover {
               transform: translateX(-150px);
-
+            &:last-of-type {
+              border-radius: 10px 0 0 10px;
+            }
             span.text {
               transform: scaleX(3);
               &::before {
@@ -192,7 +207,7 @@ section#listOfProjects {
         }
         .projectLinks {
           transform: translateY(-20%) translateX(-7%);
-          text-shadow: -3px 4px 7px #818181;
+          text-shadow: -3px 3px 8px #818181;
         }
         .devCategory {
           transform: translateX(-7%);
