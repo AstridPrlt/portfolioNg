@@ -8,17 +8,69 @@
   color: floralwhite;
 }
 
-section {
-  margin: 30px;
+
+section.description {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: 15vh 0;
+
+  .avatar {
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    width: 300px;
+    opacity: 0.5;
+    pointer-events: none;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-image: url('/assets/img/photos/profile-pic.png');
+
+    transition: all 0.5s ease-out;
+  }
+
+  p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 1.3rem;
+    text-align: justify;
+    span {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
 }
 
-img.avatar {
-  width: 20%;
-  border-radius: 50%;
+section#moreInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  margin: 50px 30px;
+
+  .softSkills, .leisure {
+    width: 30vw;
+    ul {
+      font-size: 0.9rem;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .leisure {
+    text-align: end;
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
 }
 
 .training {
   display: flex;
+  margin: 0 30px;
 
   div {
     position: relative;

@@ -160,6 +160,9 @@ section#listOfProjects {
             font-family: "Mulish", sans-serif;
             text-transform: uppercase;
             transform: scaleX(0);
+            &:last-of-type {
+              border-radius: 0 2px 2px 0;
+            }
             &.project::before {
               content: "les détails";
             }
@@ -221,6 +224,21 @@ section#listOfProjects {
         transform: rotateY(20deg);
         box-shadow: 3px 2px 6px 2px #b3b6bb;
       }
+    }
+  }
+
+  #infoPortfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p {
+      font-style: italic;
+      width: fit-content;
+      padding: 25px 50px;
+      border-radius: 10px 10px 0 0;
+      // background-image: linear-gradient(to right, #e96443, #904e95 65%);
+      // color: white;
+      background-color: #d9d9de;
     }
   }
 }

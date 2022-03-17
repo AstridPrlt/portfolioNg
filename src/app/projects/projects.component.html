@@ -34,6 +34,7 @@
 
   </section>
 
+
   <section id="listOfProjects" #listOfProjects>
     <div class="projectCard" *ngFor="let project of list">
       <img [src]="project.images.main" class="projectsImg" alt="image du site {{project.name}}">
@@ -47,7 +48,10 @@
           <button class="projectButtons" type="button"><a href="{{project.url}}" target="_blank" class="siteLinks"><span class="material-icons">reply</span> <span class="text site"></span></a></button>
         </div>
       </div>
+    </div>
 
+    <div id="infoPortfolio">
+      <p>Ce site a été développé avec Angular et SCSS</p>
     </div>
   </section>
 
