@@ -3,6 +3,10 @@
   <app-menu></app-menu>
 
   <section #description class="description">
+    <div class="socialButtons">
+      <a href="https://www.linkedin.com/in/astrid-perillat/" target="_blank"><img src="/assets/img/linkedin-50.png" alt="lien vers mon profil LinkedIn"></a>
+      <a href="https://github.com/AstridPrlt" target="_blank"><img src="/assets/img/github-50.png" alt="lien vers mon profil GitHub"></a>
+    </div>
     <img #avatar class="avatar" src="/assets/img/photos/profile-pic.png" alt="">
     <!-- <div #avatar class="avatar"></div> -->
     <p>Il y a quelques années, complètement par hasard, j'ai ouvert une toute petite porte d'un univers immense et passionnant : j'ai découvert le <span>développement web</span> et j'ai tout de suite accroché.<br>
@@ -16,7 +20,9 @@
   <section id="moreInfo">
 
     <div class="softSkills">
-      <h3>MES SOFT SKILLS</h3>
+      <div class="title">
+        <h3>MES<br>SOFT<br>SKILLS</h3>
+      </div>
       <ul>
         <li>Autonomie</li>
         <li>Rigueur</li>
@@ -27,7 +33,9 @@
     </div>
 
     <div class="leisure">
-      <h3>WHAT ELSE ?</h3>
+      <div class="title">
+        <h3>WHAT<br>ELSE ?</h3>
+      </div>
       <ul>
         <li>J’écoute de la musique, tout le temps</li>
         <li>Je joue, souvent</li>
@@ -39,7 +47,7 @@
   </section>
 
 
-  <section class="resume">
+  <section id="resume">
     <!-- <div class="experience">
       <h3>Expérience</h3>
 
@@ -51,19 +59,19 @@
       <div class="ocr">
         <h4>CERTIFICAT PROFESSIONNEL DÉVELOPPEUR WEB</h4>
         <span class="year">2020</span>
-        <span class="school">OpenClassRooms</span>
+        <span class="school"><a href="https://openclassrooms.com/fr/" target="_blank" class="linkUrl">OpenClassRooms</a></span>
 
         <p>Formation au développement web par la réalisation de 5 projets en totale autonomie. <br>
           Langages : HTML, CSS, Javascript, PHP, MySQL <br>
           Frameworks : Bootstrap, VueJS, Laravel <br>
-          Outils et techniques : Wordpress, API REST, Programmation Orientée Objet, Architecture MVC, GitHub
+          Outils et techniques : Wordpress, API REST, OOP, Architecture MVC, GitHub
         </p>
       </div>
 
       <div class="cdr">
         <h4>CERTIFICAT EN RÉDACTION WEB SEO</h4>
         <span class="year">2019</span>
-        <span class="school">Le Comptoir des Rédacteurs</span>
+        <span class="school"><a href="https://comptoirdesredacteurs.fr/" target="_blank" class="linkUrl">Le Comptoir des Rédacteurs</a></span>
 
         <p>Formation aux techniques de création de contenus écrits pour le web et optimisés pour le référencement naturel des moteurs de recherche.</p>
       </div>

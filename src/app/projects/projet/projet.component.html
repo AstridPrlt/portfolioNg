@@ -21,7 +21,7 @@
       <img [src]="projectDetails.images.main" alt="image du site {{projectDetails.name}}">
     </div>
 
-    <a class="urlLink" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
+    <a class="linkToSite" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
   </section>
 
   <section id="tools">
@@ -36,6 +36,7 @@
     <section id="description">
       <div id="descProject">
         <h3 #projectTitle>le projet</h3>
+        <span class="smallTitle">LE PROJET</span>
         <p [innerHTML]="projectDetails.goal"></p>
       </div>
     </section>
@@ -70,6 +71,7 @@
     <section id="objectives">
       <div id="descObjectives">
         <h3 #objectivesTitle>mes<br>objectifs</h3>
+        <span class="smallTitle">MES OBJECTIFS</span>
         <ul>
           <li *ngFor="let item of projectDetails.objectives" [innerHTML]="item"></li>
         </ul>
@@ -106,7 +108,7 @@
 
 
   <section id="footer">
-    <a class="urlLink" id="linkBottom" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
+    <a class="linkToSite" id="linkBottom" href="{{projectDetails.url}}" target="_blank">Voir le site</a>
 
     <div *ngIf="pathOfPreviousProject" class="previousProject navOtherProject">
       <button [routerLink]="['/portfolio', pathOfPreviousProject]" (click)="loadProject()"><span class="material-icons">navigate_before</span></button>

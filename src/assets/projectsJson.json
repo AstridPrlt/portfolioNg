@@ -6,7 +6,7 @@
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
     "development": ["intégration web", "angular", "typescript", "scss", "figma"],
-    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3' target='_blank' class='a-json'>FrontendMentor</a> : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
+    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3' target='_blank' class='linkUrl'>FrontendMentor</a> : réaliser l'intégration web d'un site vitrine complet à partir d'une maquette Figma",
     "tools": ["Angular", "SCSS", "Figma"],
     "objectives": [
       "créer l'interface sous forme de <strong>Single Page Application</strong>",
@@ -35,7 +35,7 @@
     "url": "https://astridprlt.github.io/room-homepage/",
     "github": "https://github.com/AstridPrlt/room-homepage",
     "development": ["intégration web", "javascript"],
-    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq' target='_blank'>FrontendMentor</a> : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
+    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq' target='_blank' class='linkUrl'>FrontendMentor</a> : réaliser l'intégration web de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
     "tools": ["HTML / CSS", "Javascript"],
     "objectives": [],
     "images": {

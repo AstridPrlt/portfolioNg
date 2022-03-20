@@ -54,7 +54,7 @@ button.close {
   }
 }
 
-a.urlLink {
+a.linkToSite {
   position: absolute;
   right: 115px;
   bottom: 65px;
@@ -67,10 +67,17 @@ a.urlLink {
   /* font-size: 1.3rem; */
   text-transform: uppercase;
   // animation: pulse 1.3s infinite;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.04);
+  }
   &#linkBottom {
     right: 50%;
     bottom: 100%;
     transform: translateX(50%);
+    &:hover {
+      transform: translateX(50%) scale(1.04);
+    }
   }
 }
 // @keyframes pulse {
@@ -197,6 +204,13 @@ section#tools {
       right: 2%;
       bottom: 25%;
     }
+
+    span.smallTitle {
+      background: linear-gradient(to right, #904e95, #e96443 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
   }
 }
 section#description {
@@ -212,9 +226,6 @@ section#description {
       font-family: 'Montserrat', sans-serif;
     }
   }
-}
-.a-json {
-  color: lightcoral;
 }
 
 section#siteImages {
