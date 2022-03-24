@@ -47,6 +47,10 @@
           <button [routerLink]="['/portfolio', project.path]" class="projectButtons" type="button"><span class="material-icons">visibility</span> <span class="text project"></span></button>
           <button class="projectButtons" type="button"><a href="{{project.url}}" target="_blank" class="siteLinks"><span class="material-icons">reply</span> <span class="text site"></span></a></button>
         </div>
+        <div class="cardButtonsSmallScreens">
+          <button [routerLink]="['/portfolio', project.path]" class="projectButtons" type="button">Les détails</button>
+          <button class="projectButtons" type="button"><a href="{{project.url}}" target="_blank" class="siteLinks">Voir le site</a></button>
+        </div>
       </div>
     </div>
 

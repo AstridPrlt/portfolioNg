@@ -43,7 +43,7 @@
 
     <section id="siteImages">
       <div id="siteImagesText">
-        <h3>Le site<br>en images...</h3>
+        <h3>Le site en images...</h3>
         <div class="sliderNav">
           <div class="nav">
             <button (click)="previousSlide()"><span class="material-icons">west</span></button>
@@ -55,6 +55,12 @@
         </div>
       </div>
       <div id="siteImagesSlider">
+        <img srcset="{{projectDetails.siteImages[0]}}-1300.png 1300w, {{projectDetails.siteImages[0]}}-600.png 600w"
+        sizes="(max-width: 1200px) 600px,
+                1300px"
+        src="{{projectDetails.siteImages[0]}}-1300.png"
+        alt="Screenshots des pages du site">
+
         <img [id]="0" class="sliderImage show" srcset="{{projectDetails.siteImages[0]}}-1300.png 1300w, {{projectDetails.siteImages[0]}}-600.png 600w"
         sizes="(max-width: 1200px) 600px,
                 1300px"

@@ -210,6 +210,8 @@ section#tools {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 700;
+      position: relative;
+      z-index: 2;
     }
   }
 }
@@ -221,7 +223,7 @@ section#description {
       width: 60%;
       line-height: 2;
       white-space: pre-line;
-      font-size: 30px;
+      font-size: 1.5rem;
       text-align: justify;
       font-family: 'Montserrat', sans-serif;
     }
@@ -230,7 +232,6 @@ section#description {
 
 section#siteImages {
   width: 100%;
-  height: 80vh;
   display: flex;
   overflow: hidden;
   #siteImagesText {
@@ -239,17 +240,18 @@ section#siteImages {
     position: relative;
     top: 10%;
     width: 50%;
-    height: 70%;
     color: #6b6b85;
     box-shadow: inset 0 0 8px 2px #cccad9;
+    padding-bottom: 90px;
     h3 {
-      font-size: 5rem;
-      margin: 10%;
-      font-weight: bold;
+      position: relative;
+      font-size: clamp(30px, 7rem, 7vw);
+      margin: 10% 10% 7% 7%;
+      font-weight: 500;
     }
     .sliderNav {
       position: absolute;
-      bottom: 5%;
+      bottom: 15%;
       width: 100%;
       display: flex;
       justify-content: space-around;
@@ -277,13 +279,15 @@ section#siteImages {
   }
   #siteImagesSlider {
     position: relative;
-    width: 50%;
     height: 100%;
-    img {
-      position: absolute;
+    img:first-of-type {
       width: 100%;
-      // max-width: 600px;
-      height: fit-content;
+      max-height: 75vh;
+    }
+    img:not(:first-of-type) {
+      position: absolute;
+      left: 0;
+      width: 100%;
       transform: translateX(100%);
       transition: transform 1s ease-in-out;
       &.show {
@@ -296,17 +300,18 @@ section#siteImages {
 section#objectives{
   overflow: hidden;
   #descObjectives {
+    margin-left: 5%;
   ul {
-    position: absolute;
-    bottom: 50%;
+    position: relative;
+    width: 60%;
+    margin-left: 30px;
     li {
-      width: 70%;
-      margin: auto;
       line-height: 1.6;
       white-space: pre-line;
-      font-size: 30px;
+      font-size: 1.5rem;
       text-align: justify;
       font-family: 'Montserrat', sans-serif;
+      margin: 10px;
     }
   }
     h3 {
@@ -437,6 +442,39 @@ section#footer {
     }
     img {
       width: 10vw;
+    }
+  }
+}
+
+// @media screen and (max-width: 1023px) {
+//   section#siteImages {
+//     flex-direction: column;
+//     #siteImagesText {
+//       margin: none;
+//       font-size: 5rem;
+//     }
+//     #siteImagesSlider {
+//       width: 100%;
+//       img {
+//         position: initial;
+
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 768px) {
+  section#siteImages {
+    flex-direction: column-reverse;
+    #siteImagesText {
+      width: 100%;
+      h3 {
+        font-size: clamp(30px, 3rem, 7vw);
+        margin: 4% 7%;
+      }
+      .sliderNav {
+        flex-direction: row-reverse;
+      }
     }
   }
 }
