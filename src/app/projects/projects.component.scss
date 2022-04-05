@@ -279,6 +279,7 @@ section#listOfProjects {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     p {
       font-style: italic;
       width: fit-content;
@@ -337,7 +338,7 @@ section#listOfProjects {
             padding: 12px 24px;
             outline: none;
             border: none;
-            font-size: 1rem;
+            font-size: 0.75rem;
             background-image: linear-gradient(to right, #e96443, #904e95 65%);
             box-shadow: inset -9px -14px 20px #7a427f, inset 9px 7px 20px #e4826c;
             color: white;

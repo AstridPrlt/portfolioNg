@@ -33,7 +33,9 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll') onScroll(e: Event): void {
     this.closeButtonAnimation();
-    this.translateOnScroll();
+    if(this.document.body.getBoundingClientRect().width > 768) {
+      this.translateOnScroll();
+    }
   }
 
   constructor(private route: ActivatedRoute, private elem: ElementRef, private _renderer: Renderer2, @Inject(DOCUMENT) private document: Document) {}
@@ -58,8 +60,8 @@ export class ProjetComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.showResponsive();
-    this.translateOnScroll();
+    this.document.body.getBoundingClientRect().width > 768 ? (this.showResponsive(), this.translateOnScroll()) : this.showResponsiveSmall();
+    // this.translateOnScroll();
   }
 
   previousSlide(): void {
@@ -92,7 +94,7 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
     this._renderer.setStyle(this.responsiveText.nativeElement, 'transform', `translate3d(${0.5 * responsiveTop}px, ${0.35 * responsiveTop}px, 0px)`);
     this._renderer.setStyle(this.projectTitle.nativeElement, 'transform', `translate3d(0px, ${0.4 * projectTitleTop}px, 0px)`);
-    this._renderer.setStyle(this.objectivesTitle.nativeElement, 'transform', `translate3d(${-0.8 * objectivesTitleTop}px, 0px, 0px)`);
+    this._renderer.setStyle(this.objectivesTitle.nativeElement, 'transform', `translate3d(${-1.5 * objectivesTitleTop}px, 0px, 0px)`);
 
   }
 
@@ -116,6 +118,29 @@ export class ProjetComponent implements OnInit, AfterViewInit {
           this._renderer.removeClass(sliderArray[1], 'active');
           this._renderer.removeClass(sliderArray[2], 'active');
         } else if(leftOffset < this.document.body.clientWidth*0.85 * (-1/3)) {
+          this._renderer.addClass(sliderArray[2], 'active');
+          this._renderer.removeClass(sliderArray[1], 'active');
+          this._renderer.removeClass(sliderArray[0], 'active');
+        } else {
+          this._renderer.addClass(sliderArray[1], 'active');
+          this._renderer.removeClass(sliderArray[0], 'active');
+          this._renderer.removeClass(sliderArray[2], 'active');
+        }
+      }
+    }, 1000)
+  }
+
+  showResponsiveSmall(): any {
+    let sliderArray = this.elem.nativeElement.querySelectorAll('.dot');
+
+    setInterval(() => {
+      let leftOffset = this.wrapper.nativeElement.getBoundingClientRect().left;
+      if(this.wrapper.nativeElement) {
+        if(leftOffset > this.document.body.clientWidth * (-1/3)) {
+          this._renderer.addClass(sliderArray[0], 'active');
+          this._renderer.removeClass(sliderArray[1], 'active');
+          this._renderer.removeClass(sliderArray[2], 'active');
+        } else if(leftOffset < this.document.body.clientWidth * (-1)) {
           this._renderer.addClass(sliderArray[2], 'active');
           this._renderer.removeClass(sliderArray[1], 'active');
           this._renderer.removeClass(sliderArray[0], 'active');

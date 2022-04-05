@@ -56,7 +56,7 @@
     "url": "https://lecowee.astrid-perillat.fr/",
     "github": "",
     "development": ["full-stack", "bootstrap", "vueJs", "laravel"],
-    "goal": "Project libre clôturant ma formation.<br>J'ai choisi de réaliser, avec des <strong>frameworks</strong>, le site d'un <strong>coworking coffee</strong> proposant un accès pour ses membres et l'inscription à des activités.",
+    "goal": "Project libre clôturant ma formation.<br>J'ai choisi de réaliser, avec des <strong>frameworks</strong>, le site d'un <strong>coworking coffee</strong> proposant un accès pour ses membres et l'inscription à des évènements.",
     "tools": ["Bootstrap", "VueJS", "Laravel", "MySQL", "API Stripe", "OAuth Login"],
     "objectives": [
       "créer une <strong>partie vitrine</strong> pour présenter le café, son fonctionnement et ses évènements",
