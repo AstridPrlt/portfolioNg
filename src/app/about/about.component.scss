@@ -101,13 +101,6 @@ section#moreInfo {
       }
     }
   }
-  .leisure {
-    // text-align: end;
-    ul {
-      li {
-      }
-    }
-  }
 }
 
 section#resume {
@@ -176,4 +169,45 @@ section#resume {
     }
   }
 }
+}
+
+@media screen and (max-width: 768px) {
+
+  section.description {
+    p {
+      font-size: 17px;
+    }
+  }
+  img.avatar {
+    width: 50vw;
+  }
+
+  section#moreInfo {
+    flex-direction: column;
+
+    .softSkills, .leisure {
+      min-width: initial;
+      flex-direction: column;
+      width: 85vw;
+      div.title {
+        width: 70%;
+      }
+      ul {
+        width: 90%;
+        position: relative;
+        bottom: 10px;
+      }
+    }
+  }
+
+  section#resume {
+    width: 85%;
+    .training {
+      margin: 0 4%;
+      flex-direction: column;
+    div {
+      width: 90%;
+    }
+  }
+  }
 }

@@ -24,6 +24,7 @@
     justify-content: center;
     #welcomeText {
       width: fit-content;
+      max-width: 85vw;
       color: white;
       position: relative;
       z-index: 2;
@@ -137,7 +138,7 @@
       }
     }
     .img {
-      position: relative;
+      // position: relative;
       height: 100%;
 
       width: 75%;
@@ -207,4 +208,48 @@
 
 :is(.hidden) {
   display: none !important;
+}
+
+
+@media screen and (max-width: 500px) {
+  #home {
+    height: auto;
+    overflow-x: hidden;
+    background-attachment: fixed;
+
+    #homePage {
+      #welcomeText {
+        margin: 30% 0;
+
+        h2 {
+          span {
+            font-weight: 300;
+          }
+        }
+
+        .homeButtons {
+          flex-direction: column;
+          margin: auto;
+          .nav {
+            margin: 30px auto 0;
+            width: 100%;
+            &.navPortfolio .arrowAndText, &.navInfo .arrowAndText {
+              display: none;
+            }
+            button {
+              margin: auto;
+              width: 80%;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      .img {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+      }
+    }
+  }
 }

@@ -5,7 +5,7 @@
     "date": "2021",
     "url": "https://astridprlt.github.io/space-tourism/",
     "github": "https://github.com/AstridPrlt/space-tourism",
-    "development": ["intégration web", "angular", "scss", "figma"],
+    "development": ["intégration web", "scss", "angular", "figma"],
     "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3' target='_blank' class='linkUrl'>FrontendMentor</a> : réaliser <strong>l'intégration web</strong> d'un site vitrine complet à partir d'une <strong>maquette Figma</strong>",
     "tools": ["Angular", "SCSS", "Figma"],
     "objectives": [
@@ -55,7 +55,7 @@
     "date": "2020",
     "url": "https://lecowee.astrid-perillat.fr/",
     "github": "",
-    "development": ["full-stack", "bootstrap", "vueJs", "laravel"],
+    "development": ["full-stack", "vueJs", "bootstrap", "laravel"],
     "goal": "Project libre clôturant ma formation.<br>J'ai choisi de réaliser, avec des <strong>frameworks</strong>, le site d'un <strong>coworking coffee</strong> proposant un accès pour ses membres et l'inscription à des évènements.",
     "tools": ["Bootstrap", "VueJS", "Laravel", "MySQL", "API Stripe", "OAuth Login"],
     "objectives": [

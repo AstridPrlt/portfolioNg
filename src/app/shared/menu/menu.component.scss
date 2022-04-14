@@ -148,7 +148,7 @@ $animationTime: 0.7s;
       li {
         list-style: none;
         text-transform: uppercase;
-        font-size: 6rem;
+        font-size: clamp(16px, 6rem, 12vw);
         cursor: pointer;
 
         a {
