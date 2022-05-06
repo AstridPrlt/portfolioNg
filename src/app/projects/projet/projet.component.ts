@@ -45,11 +45,9 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
     let routeParam = this.route.params.subscribe({
       next: param => {
-        console.log(param['name']);
         this.projectToShow = param['name'];
         this.indexOfActualProject = ProjectsJson.findIndex(p => p.path == this.projectToShow);
         this.projectDetails = ProjectsJson[this.indexOfActualProject];
-        console.log(this.projectDetails);
         this.navProjectsFromIndex();
       },
       error: err => console.log(err)
@@ -61,7 +59,6 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.document.body.getBoundingClientRect().width > 768 ? (this.showResponsive(), this.translateOnScroll()) : this.showResponsiveSmall();
-    // this.translateOnScroll();
   }
 
   previousSlide(): void {

@@ -1,9 +1,11 @@
+@import "./../../styles.scss";
+
 :host {
   display: block;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background: url("/assets/img/PatternT.svg"), #242432;
+  background: url("/assets/img/PatternT.svg"), $color-primary;
   background-attachment: fixed;
   color: floralwhite;
 }
@@ -36,7 +38,7 @@ section.description {
     width: 60%;
     margin: 0 auto;
     line-height: 2;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-align: justify;
     span {
       font-weight: bold;
@@ -85,12 +87,12 @@ section#moreInfo {
       justify-content: center;
     }
     ul {
-      font-size: 0.9rem;
+      font-size: 1.4rem;
+      margin: 10px;
       padding: 10px;
       width: 75%;
-      background: #242432;
+      background: $color-primary;
       height: 90%;
-      margin-right: 2%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -103,20 +105,24 @@ section#moreInfo {
   }
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 section#resume {
   background: linear-gradient(to right, #904e95, #e96443 80%);
   width: 90%;
   margin: 0 auto 10vh;
   padding: 10px 0px;
+
   h3 {
-    line-height: 60px;
-    margin-left: 20px;
+    padding: 20px;
   }
 
   .training {
     display: flex;
     margin: 0 1%;
-    background: #242432;
+    background: $color-primary;
 
   div {
     position: relative;
@@ -144,7 +150,7 @@ section#resume {
       // -webkit-background-clip: text;
       // -webkit-text-fill-color: transparent;
       line-height: 18px;
-      font-size: 18px;
+      font-size: 1.6rem;
       font-weight: 600;
       text-transform: uppercase;
       font-family: "Poppins", sans-serif;
@@ -152,7 +158,7 @@ section#resume {
     }
 
     span.year {
-      font-size: 16px;
+      font-size: 1.6rem;
       background: rgba(255, 255, 255, 0.15);
       padding: 5px 15px;
       display: inline-block;
@@ -162,10 +168,11 @@ section#resume {
     span.school {
       font-style: italic;
       margin-left: 10px;
+      font-size: 1.3rem;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 1.4rem;
     }
   }
 }
@@ -175,7 +182,7 @@ section#resume {
 
   section.description {
     p {
-      font-size: 17px;
+      font-size: 1.7rem;
     }
   }
   img.avatar {

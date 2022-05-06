@@ -29,27 +29,6 @@
   },
 
   {
-    "name": "Room",
-    "path": "room",
-    "date": "2021",
-    "url": "https://astridprlt.github.io/room-homepage/",
-    "github": "https://github.com/AstridPrlt/room-homepage",
-    "development": ["intégration web", "javascript"],
-    "goal": "Challenge du site <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq' target='_blank' class='linkUrl'>FrontendMentor</a> : réaliser <strong>l'intégration web</strong> de la page d'accueil d'un site à partir de l'image du rendu visuel et d'un fichier donnant les directives principales sur l'UI",
-    "tools": ["HTML / CSS", "Javascript"],
-    "objectives": [],
-    "images": {
-      "main": "./assets/img/room.jpg",
-      "desktop": "./assets/img/mockups/roomLaptop.png",
-      "tablet": "./assets/img/mockups/roomTablet.png",
-      "mobile": "./assets/img/mockups/roomMobile.png"
-    },
-    "siteImages": [
-
-    ]
-  },
-
-  {
     "name": "Le Cowee",
     "path": "le-cowee",
     "date": "2020",

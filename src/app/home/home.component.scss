@@ -6,10 +6,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  // display: flex;
-  // background-image: url("/assets/img/ColoredPatternsT.svg"),linear-gradient(135deg, hsla(233, 35%, 18%, 1) 0%, hsla(242, 36%, 45%, 1) 100%);
-  // background: url("/assets/img/PatternT.svg"), black;
-  background: url('/assets/img/PatternT.svg'), #242432;
+  background: url('/assets/img/PatternT.svg'), $color-primary;
   color: floralwhite;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +29,7 @@
 
       h2 {
         font-family: 'Oswald', sans-serif;
-        font-size: 5rem;
+        font-size: 7.5rem;
         font-weight: 300;
         color: floralwhite;
         line-height: 1.2;
@@ -44,14 +41,12 @@
       p {
         color: whitesmoke;
         line-height: 2;
-
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-weight: 600;
       }
       .homeButtons {
         display: flex;
         margin-left: 10%;
-        // margin-top: 20px;
         .nav {
           width: fit-content;
           position: relative;
@@ -59,6 +54,7 @@
           margin-top: 60px;
           span.text {
             font-family: 'Kaushan Script', cursive;
+            font-size: 1.6rem;
           }
           &.navPortfolio .arrowAndText {
             position: absolute;
@@ -66,7 +62,7 @@
             top: -50%;
             span.material-icons {
               transform: rotateX(179deg) rotateY(183deg) rotate(71deg) scaleX(2);
-              font-size: 2rem;
+              font-size: 3rem;
             }
           }
           &.navInfo .arrowAndText {
@@ -75,7 +71,7 @@
             right: 0;
             span.material-icons {
               transform: rotateX(182deg) rotate(55deg) scaleX(2);
-              font-size: 2rem;
+              font-size: 3rem;
             }
           }
           button {
@@ -93,7 +89,6 @@
             background-size: 200% auto;
             color: white;
             background-image: linear-gradient(to right, #e96443 0%, #904e95  51%, #e96443  100%);
-            // box-shadow: inset 2px 2px 5px #b3573b, inset -2px -2px 5px #282a52;
             border-radius: 16px;
             border: 2px solid transparent;
             &:hover {
@@ -104,7 +99,7 @@
           }
 
           &.btn-simple {
-            background: #242432;
+            background: $color-primary;
             color: #ed97ae;
             border: 2px solid #ed97ae;
             position: relative;
@@ -138,9 +133,7 @@
       }
     }
     .img {
-      // position: relative;
       height: 100%;
-
       width: 75%;
       position: absolute;
       opacity: 0.3;

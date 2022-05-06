@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-$color-primary: #0B3948;
-// $color-secondary: #E07A5F;
-// $color-secondary: #e6937d;
+$color-primary: #242432;
 $color-secondary: #dc5a37;
 
 $font-text: 'Montserrat', sans-serif;
 $font-titles: 'Poiret One', cursive;
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: $font-text;
