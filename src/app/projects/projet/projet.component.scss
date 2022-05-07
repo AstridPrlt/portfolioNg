@@ -418,6 +418,35 @@ section#footer {
     img {
       width: 10vw;
     }
+
+    @media (hover: hover) {
+      &::before {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background: white;
+        color: #171721;
+        font-size: 1.5rem;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      &.previousProject:before {
+        content: "PROJET PRECEDENT";
+        right: 0;
+      }
+      &.nextProject:before {
+        content: "PROJET SUIVANT";
+        left: 0;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -476,7 +505,6 @@ section#footer {
         max-width: 120px;
         object-fit: cover;
       }
-
     }
   }
 
