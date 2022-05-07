@@ -52,21 +52,9 @@ img.avatar {
   aspect-ratio: 1;
   margin: auto;
   display: block;
-  // position: absolute;
-  // top: 100%;
-  // left: 35%;
-  // opacity: 1;
-  // background-size: cover;
-  // background-image: url('/assets/img/photos/profile-pic.png');
-  // pointer-events: none;
-  // transition: all 0.5s ease-out;
 }
 
 section#moreInfo {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // height: 300px;
   margin: 5vh 30px 5vh;
   display: flex;
   flex-wrap: wrap;
@@ -98,8 +86,6 @@ section#moreInfo {
       justify-content: space-between;
       li {
         list-style: none;
-        // line-height: 1.5rem;
-        // margin: 10px 0;
       }
     }
   }
@@ -145,10 +131,6 @@ section#resume {
     }
 
     h4 {
-      // color: #f2abad;
-      // background: linear-gradient(to right, #904e95, #e96443 70%);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
       line-height: 18px;
       font-size: 1.6rem;
       font-weight: 600;

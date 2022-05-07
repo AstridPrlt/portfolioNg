@@ -95,15 +95,6 @@ export class ProjetComponent implements OnInit, AfterViewInit {
 
   }
 
-  scrollAuto(event: Event): void {
-    // window.removeEventListener('scroll', this.scrollAuto);
-    // let sectionDesc = document.getElementById('descProject');
-    // let top = sectionDesc?.getBoundingClientRect().top;
-    // if(top != undefined && top <= window.innerHeight / 2) {
-    //   sectionDesc?.scrollIntoView({block: "start", behavior: 'smooth'})
-    // }
-  }
-
   showResponsive(): any {
     let sliderArray = this.elem.nativeElement.querySelectorAll('.dot');
 
