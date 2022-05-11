@@ -276,8 +276,10 @@ section#listOfProjects {
       height: fit-content;
       flex-direction: column;
       margin-bottom: clamp(100px, 10vh, 500px);
+      position: relative;
       img.projectsImg {
         width: 75%;
+        height: auto;
         box-shadow: none;
         position: absolute;
         top: 15px;
@@ -290,7 +292,7 @@ section#listOfProjects {
         min-height: 500px;
         height: fit-content;
         padding: 5% 0;
-        top: 80%;
+        top: 0;
         background: whitesmoke;
         box-shadow: rgb(0 0 0 / 20%) 0px 10px 50px 10px;
         border-radius: 16px;
